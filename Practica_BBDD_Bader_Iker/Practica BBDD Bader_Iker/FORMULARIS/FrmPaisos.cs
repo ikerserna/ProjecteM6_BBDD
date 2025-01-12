@@ -16,6 +16,8 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         private RestaurantsDBEntities restaurantContext { get; set; }
         Boolean bFirst = true;
 
+        FrmADMPais frmADMPais = null;
+
         public FrmPaisos(RestaurantsDBEntities xres)
         {
             InitializeComponent();
@@ -33,8 +35,6 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 
         private void iniDgrid()
         {
-            // ****ALERTA!!! ARA ELS NOMS DE LES COLUMNES DEL DATAGRIDVIEW NO SÓN ELS DELS CAMPS DE LA TAULA EN LA BD
-            //     SINÓ QUE SÓN ELS QUE HEM UTILITZAT EN LA QUERY DINS DE getDades() o getDadesSenseFiltre()
             dgPaisos.Columns["pais"].HeaderText = "Pais";
             dgPaisos.Columns["continent"].HeaderText = "Continent";
         }
@@ -42,10 +42,10 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         private void omplirComboContinents()
         {
             var qryContinents = from c in restaurantContext.Continents
-                             orderby c.NomContinent
-                             select c;
+                                orderby c.NomContinent
+                                select c;
 
-            // omplim el combobox de regions
+
             cbContinents.DataSource = qryContinents.ToList();
             cbContinents.DisplayMember = "NomContinent";
             cbContinents.ValueMember = "NomContinent";
@@ -54,7 +54,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 
         private void cbxTots_CheckedChanged(object sender, EventArgs e)
         {
-            
+
             if (cbxTots.Checked)
             {
                 getDadesSenseFiltre();
@@ -62,20 +62,76 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             }
             else
             {
-                getDades((string)cbContinents.SelectedValue);
+                getDades(cbContinents.SelectedValue.ToString());
                 cbContinents.Enabled = true;
             }
         }
 
         private void pbAdd_Click(object sender, EventArgs e)
         {
+            frmADMPais = new FrmADMPais(restaurantContext, 'A');
+            frmADMPais.ShowDialog();
 
+            if (cbxTots.Checked)
+            {
+                getDadesSenseFiltre();
+            }
+            else
+            {
+                getDades(cbContinents.SelectedValue.ToString());
+            }
+
+            if (frmADMPais.pais != "")
+            {
+                seleccionarFila(frmADMPais.pais);
+            }
+            frmADMPais = null;
         }
 
         private void pbDel_Click(object sender, EventArgs e)
         {
+            if (dgPaisos.Rows.Count > 0)
+            {
+                frmADMPais = new FrmADMPais(restaurantContext, 'D');
 
+                frmADMPais.pais = dgPaisos.SelectedRows[0].Cells["pais"].Value.ToString().Trim();
+                frmADMPais.continent = dgPaisos.SelectedRows[0].Cells["continent"].Value.ToString().Trim();
+
+                frmADMPais.ShowDialog();
+
+                if (cbxTots.Checked)
+                {
+                    getDadesSenseFiltre();
+                }
+                else
+                {
+                    getDades(cbContinents.SelectedValue.ToString());
+                }
+                frmADMPais = null;
+            }
+            else
+            {
+                MessageBox.Show("No has seleccionat cap fila", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        private void seleccionarFila(string pais)
+        {
+            int i = -1;
+            Boolean xbTrobat = false;
+
+            while (!xbTrobat && i < dgPaisos.Rows.Count)
+            {
+                i++;
+                xbTrobat = (dgPaisos.Rows[i].Cells["pais"].Value.ToString() == pais);
+            }
+            if (dgPaisos.Rows.Count > 0)
+            {
+                dgPaisos.Rows[i].Selected = true;
+                dgPaisos.FirstDisplayedScrollingRowIndex = i; // Desplaça el DataGridView a la fila seleccionada
+            }
+        }
+
 
         private void getDades(string continent)
         {
@@ -94,7 +150,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             var qryPaisos = from p in restaurantContext.Paisos
                             orderby p.NomPais
                             select new
-                            { 
+                            {
                                 pais = p.NomPais,
                                 continent = p.NomContinent
                             };

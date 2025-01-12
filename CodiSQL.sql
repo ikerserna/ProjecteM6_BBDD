@@ -1,9 +1,11 @@
-CREATE DATABASE ProjecteM6_BBDD;
+CREATE DATABASE RestaurantsDB;
 GO
 
-USE ProjecteM6_BBDD;
-GO
+--DROP DATABASE RestaurantsDB;
+--GO
 
+USE RestaurantsDB;
+GO
 
 CREATE TABLE Continents (
     NomContinent NVARCHAR(60) PRIMARY KEY
@@ -27,7 +29,7 @@ CREATE TABLE Restaurants (
     NomCiutat NVARCHAR(60),
     Adresa NVARCHAR(60),
     CodiPostal NVARCHAR(20),    
-	eMail NVARCHAR(40),
+    eMail NVARCHAR(40),
     TelefonContacte NVARCHAR(20),
     MiniaturaWeb NVARCHAR(500),
     LinkWeb NVARCHAR(255),
@@ -35,6 +37,8 @@ CREATE TABLE Restaurants (
     CuinaEspecialitzada NVARCHAR(60),
     FOREIGN KEY (NomCiutat) REFERENCES Ciutats(NomCiutat)
 );
+
+
 
 CREATE TABLE Horaris (
     idHorari INT IDENTITY(1,1) PRIMARY KEY,
@@ -47,11 +51,9 @@ CREATE TABLE Horaris (
     CONSTRAINT CHK_DiaSetmana CHECK (diaSetmana IN ('dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'dissabte', 'diumenge'))
 );
 
-
-
 CREATE TABLE GaleriaImatges (
     nomImatge NVARCHAR(60),
-	idImatge INT PRIMARY KEY,
+    idImatge INT PRIMARY KEY,
     NomRestaurant NVARCHAR(60),
     FOREIGN KEY (NomRestaurant) REFERENCES Restaurants(Nom)
 );
@@ -68,9 +70,8 @@ CREATE TABLE Resenyes (
     idResenya INT IDENTITY(1,1) PRIMARY KEY,
     resenya NVARCHAR(2000),
     valoracio INT CHECK (valoracio BETWEEN 1 AND 5),
-	idUsuari INT,
-	FOREIGN KEY (idUsuari)  REFERENCES Usuaris(idUsuari)
-
+    idUsuari INT,
+    FOREIGN KEY (idUsuari) REFERENCES Usuaris(idUsuari)
 );
 
 CREATE TABLE Reserves (
@@ -82,8 +83,8 @@ CREATE TABLE Reserves (
     NumeroPersones INT CHECK (NumeroPersones > 0),
     FOREIGN KEY (NomRestaurant) REFERENCES Restaurants(Nom),
     FOREIGN KEY (idUsuari) REFERENCES Usuaris(idUsuari),
-	CONSTRAINT UNQ_Reserves UNIQUE (NomRestaurant, DataReserva, HoraReserva),
-	CONSTRAINT CK_NumeroPersones CHECK (NumeroPersones BETWEEN 1 AND 20)
+    CONSTRAINT UNQ_Reserves UNIQUE (NomRestaurant, DataReserva, HoraReserva),
+    CONSTRAINT CK_NumeroPersones CHECK (NumeroPersones BETWEEN 1 AND 20)
 );
 GO
 
@@ -113,67 +114,64 @@ BEGIN
 
     IF @HoraReserva < @HoraApertura OR @HoraReserva > @HoraCierre
     BEGIN
-        RAISERROR('La reserva no se puede realizar fuera del horario del restaurante.', 16, 1);
+        RAISERROR('La reserva no es pot realitzar fora de l''horari del restaurant.', 16, 1);
         ROLLBACK TRANSACTION; 
     END
 END
-
 GO
 
-
--- Datos de Continentes
+-- Dades de Continents
 INSERT INTO Continents (NomContinent) VALUES
-('Europa'),
-('Asia'),
-('América'),
-('África'),
-('Oceanía');
+	('Europa'),
+	('Àsia'),
+	('Amèrica'),
+	('Àfrica'),
+	('Oceania');
 
--- Datos de Países
+-- Dades de Països
 INSERT INTO Paisos (NomPais, NomContinent) VALUES
-('España', 'Europa'),
-('Francia', 'Europa'),
-('Italia', 'Europa'),
-('Japón', 'Asia'),
-('EE.UU.', 'América');
+	('Espanya', 'Europa'),
+	('França', 'Europa'),
+	('Itàlia', 'Europa'),
+	('Japó', 'Àsia'),
+	('EE.UU.', 'Amèrica');
 
--- Datos de Ciudades
+-- Dades de Ciutats
 INSERT INTO Ciutats (NomCiutat, NomPais) VALUES
-('Madrid', 'España'),
-('Barcelona', 'España'),
-('París', 'Francia'),
-('Roma', 'Italia'),
-('Tokio', 'Japón'),
-('Nueva York', 'EE.UU.');
+	('Madrid', 'Espanya'),
+	('Barcelona', 'Espanya'),
+	('París', 'França'),
+	('Roma', 'Itàlia'),
+	('Tòquio', 'Japó'),
+	('Nova York', 'EE.UU.');
 
--- Datos de Restaurantes
+-- Dades de Restaurants
 INSERT INTO Restaurants (Nom, estrellesMichellin, NomCiutat, Adresa, CodiPostal, eMail, TelefonContacte, MiniaturaWeb, LinkWeb, GoogleMapsLink, CuinaEspecialitzada) VALUES
-('El Celler de Can Roca', 3, 'Barcelona', 'Carrer de Can Roca, 1', '08001', 'contacto@cellercanroca.com', '934567890', 'imagen.jpg', 'http://cellercanroca.com', 'https://goo.gl/maps/xxxxxx', 'Mediterránea'),
-('Le Bernardin', 3, 'Nueva York', '155 W 51st St', '10019', 'contacto@lebernardin.com', '2125551234', 'imagen2.jpg', 'http://lebernardin.com', 'https://goo.gl/maps/yyyyyy', 'Francesa'),
-('Narisawa', 2, 'Tokio', 'Minato City, 2 Chome-6-15', '107-0062', 'contacto@narizawa.com', '03-5785-1234', 'imagen3.jpg', 'http://narizawa.com', 'https://goo.gl/maps/zzzzzz', 'Japonesa');
+	('El Celler de Can Roca', 3, 'Barcelona', 'Carrer de Can Roca, 1', '08001', 'contacte@cellercanroca.com', '934567890', 'imatge.jpg', 'http://cellercanroca.com', 'https://goo.gl/maps/xxxxxx', 'Mediterrània'),
+	('Le Bernardin', 3, 'Nova York', '155 W 51st St', '10019', 'contacte@lebernardin.com', '2125551234', 'imatge2.jpg', 'http://lebernardin.com', 'https://goo.gl/maps/yyyyyy', 'Francesa'),
+	('Narisawa', 2, 'Tòquio', 'Minato City, 2 Chome-6-15', '107-0062', 'contacte@narizawa.com', '03-5785-1234', 'imatge3.jpg', 'http://narizawa.com', 'https://goo.gl/maps/zzzzzz', 'Japonesa');
 
--- Datos de Horarios
+-- Dades de Horaris
 INSERT INTO Horaris (nomRestaurant, diaSetmana, horaObertura, horaTancament) VALUES
-('El Celler de Can Roca', 'dilluns', '12:00', '23:00'),
-('El Celler de Can Roca', 'dimarts', '12:00', '23:00'),
-('Le Bernardin', 'dilluns', '12:00', '22:00'),
-('Le Bernardin', 'dimarts', '12:00', '22:00'),
-('Narisawa', 'dilluns', '18:00', '22:00'),
-('Narisawa', 'dimarts', '18:00', '22:00');
+	('El Celler de Can Roca', 'dilluns', '12:00', '23:00'),
+	('El Celler de Can Roca', 'dimarts', '12:00', '23:00'),
+	('Le Bernardin', 'dilluns', '12:00', '22:00'),
+	('Le Bernardin', 'dimarts', '12:00', '22:00'),
+	('Narisawa', 'dilluns', '18:00', '22:00'),
+	('Narisawa', 'dimarts', '18:00', '22:00');
 
--- Datos de Usuarios
+-- Dades d'Usuaris
 INSERT INTO Usuaris (NomUsuari, Correu, Telefon, Contrassenya) VALUES
-('johndoe', 'johndoe@example.com', '123456789', 'contraseña123'),
-('janedoe', 'janedoe@example.com', '987654321', 'contraseña456');
+	('johndoe', 'johndoe@example.com', '123456789', 'contrasenya123'),
+	('janedoe', 'janedoe@example.com', '987654321', 'contrasenya456');
 
--- Datos de Reseñas
+-- Dades de Ressenyes
 INSERT INTO Resenyes (resenya, valoracio, idUsuari) VALUES
-('Excelente restaurante, la comida es espectacular y el servicio es de primera.', 5, 1),
-('Muy buena experiencia, aunque el precio es algo elevado.', 4, 2);
+	('Excel·lent restaurant, el menjar és espectacular i el servei és de primera.', 5, 1),
+	('Molt bona experiència, tot i que el preu és una mica elevat.', 4, 2);
 
--- Datos de Reservas
+-- Dades de Reserves
 INSERT INTO Reserves (NomRestaurant, idUsuari, DataReserva, HoraReserva, NumeroPersones) VALUES
-('El Celler de Can Roca', 1, '2025-01-15', '13:00', 4),
-('Le Bernardin', 2, '2025-01-16', '19:00', 2),
-('Narisawa', 1, '2025-01-17', '20:00', 3);
-
+	('El Celler de Can Roca', 1, '2025-01-15', '13:00', 4),
+	('Le Bernardin', 2, '2025-01-16', '19:00', 2),
+	('Narisawa', 1, '2025-01-17', '20:00', 3);

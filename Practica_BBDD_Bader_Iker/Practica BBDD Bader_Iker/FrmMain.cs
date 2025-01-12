@@ -17,6 +17,7 @@ namespace Practica_BBDD_Bader_Iker
         private RestaurantsDBEntities restaurantContext { get; set; } = new RestaurantsDBEntities();
 
         FrmPaisos frmPaisos = null;
+        FrmCiutats frmCiutats = null;
 
         public FrmMain()
         {
@@ -35,6 +36,19 @@ namespace Practica_BBDD_Bader_Iker
                 frmPaisos.Show();
             }
             frmPaisos.Activate();
+        }
+        private void ciutatsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String xnom = "Ciutats";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmCiutats = new FrmCiutats(restaurantContext);
+                frmCiutats.Name = xnom;
+                frmCiutats.MdiParent = this;
+                frmCiutats.Show();
+            }
+            frmCiutats.Activate();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -96,6 +110,7 @@ namespace Practica_BBDD_Bader_Iker
             }
         }
 
+
         private void verificarConexióToolStripMenuItem_Click(object sender, EventArgs e)
         {
             verificarConnexio();
@@ -108,5 +123,6 @@ namespace Practica_BBDD_Bader_Iker
                 e.Cancel = true;
             }
         }
+
     }
 }

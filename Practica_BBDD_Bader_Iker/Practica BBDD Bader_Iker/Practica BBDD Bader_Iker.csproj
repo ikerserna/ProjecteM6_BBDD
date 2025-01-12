@@ -64,11 +64,29 @@
     <Compile Include="Continents.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="FORMULARIS\FrmADMCiutat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIS\FrmADMCiutat.Designer.cs">
+      <DependentUpon>FrmADMCiutat.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMULARIS\FrmADMPais.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FORMULARIS\FrmADMPais.Designer.cs">
       <DependentUpon>FrmADMPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIS\FrmCatEstrellesMichelin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIS\FrmCatEstrellesMichelin.Designer.cs">
+      <DependentUpon>FrmCatEstrellesMichelin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIS\FrmCiutats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIS\FrmCiutats.Designer.cs">
+      <DependentUpon>FrmCiutats.cs</DependentUpon>
     </Compile>
     <Compile Include="FORMULARIS\FrmPaisos.cs">
       <SubType>Form</SubType>
@@ -125,8 +143,14 @@
     <Compile Include="Usuaris.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FORMULARIS\FrmADMCiutat.resx">
+      <DependentUpon>FrmADMCiutat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIS\FrmADMPais.resx">
       <DependentUpon>FrmADMPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIS\FrmCiutats.resx">
+      <DependentUpon>FrmCiutats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIS\FrmPaisos.resx">
       <DependentUpon>FrmPaisos.cs</DependentUpon>

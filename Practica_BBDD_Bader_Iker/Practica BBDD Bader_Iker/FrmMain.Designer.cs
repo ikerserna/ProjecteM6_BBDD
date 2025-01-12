@@ -94,13 +94,14 @@
             // ciutatsToolStripMenuItem
             // 
             this.ciutatsToolStripMenuItem.Name = "ciutatsToolStripMenuItem";
-            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ciutatsToolStripMenuItem.Text = "Ciutats";
+            this.ciutatsToolStripMenuItem.Click += new System.EventHandler(this.ciutatsToolStripMenuItem_Click);
             // 
             // paisosToolStripMenuItem
             // 
             this.paisosToolStripMenuItem.Name = "paisosToolStripMenuItem";
-            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.paisosToolStripMenuItem.Text = "Paisos";
             this.paisosToolStripMenuItem.Click += new System.EventHandler(this.paisosToolStripMenuItem_Click);
             // 
@@ -119,31 +120,31 @@
             // dadesToolStripMenuItem
             // 
             this.dadesToolStripMenuItem.Name = "dadesToolStripMenuItem";
-            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.dadesToolStripMenuItem.Text = "Dades";
             // 
             // galeriaToolStripMenuItem
             // 
             this.galeriaToolStripMenuItem.Name = "galeriaToolStripMenuItem";
-            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.galeriaToolStripMenuItem.Text = "Galeria";
             // 
             // miniaturaWikiToolStripMenuItem
             // 
             this.miniaturaWikiToolStripMenuItem.Name = "miniaturaWikiToolStripMenuItem";
-            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.miniaturaWikiToolStripMenuItem.Text = "Miniatures Wiki";
             // 
             // googleMapsToolStripMenuItem
             // 
             this.googleMapsToolStripMenuItem.Name = "googleMapsToolStripMenuItem";
-            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.googleMapsToolStripMenuItem.Text = "Google Maps";
             // 
             // valoracioToolStripMenuItem
             // 
             this.valoracioToolStripMenuItem.Name = "valoracioToolStripMenuItem";
-            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.valoracioToolStripMenuItem.Text = "Valoracions";
             // 
             // tancarToolStripMenuItem

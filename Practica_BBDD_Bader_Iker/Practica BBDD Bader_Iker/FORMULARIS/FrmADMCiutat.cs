@@ -11,40 +11,55 @@ using System.Windows.Forms;
 
 namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
-    public partial class FrmADMPais : Form
+    public partial class FrmADMCiutat : Form
     {
 
         private RestaurantsDBEntities restaurantContext { get; set; }
 
         char op;
         public string pais;
-        public string continent;
+        public string ciutat;
 
-        public FrmADMPais(RestaurantsDBEntities xres, char xop)
+        public FrmADMCiutat(RestaurantsDBEntities xres, char xop)
         {
             InitializeComponent();
             restaurantContext = xres;
             op = xop;
         }
 
-        private void FrmADMPais_Load(object sender, EventArgs e)
+        private void FrmADMCiutat_Load(object sender, EventArgs e)
         {
-            omplirComboContinents();
+            omplirComboPaisos();
             switch (op)
             {
 
-                case 'A': this.Name = "Afegir Pais";
-                    cbContinent.SelectedIndex = 0;
+                case 'A':
+                    this.Name = "Afegir Pais";
+                    cbPais.SelectedIndex = 0;
                     break;
-                case 'D': this.Name = "Eliminar Pais";    
-                    cbContinent.SelectedValue = continent;
-                    tbPais.Text = pais;
+                case 'D':
+                    this.Name = "Eliminar Pais";
+                    cbPais.SelectedValue = pais;
+                    tbCiutat.Text = ciutat;
                     break;
-                case 'M': this.Name = "Modificar Pais";
+                case 'M':
+                    this.Name = "Modificar Pais";
                     break;
                 default:
                     break;
             }
+        }
+
+        private Boolean vDades()
+        {
+            Boolean xb = true;
+
+            if ((tbCiutat.Text.Trim().Length == 0) || (cbPais.SelectedItem == null))
+            {
+                MessageBox.Show("No es poden deixar dades en blanc", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                xb = false;
+            }
+            return xb;
         }
 
         private void btAccept_Click(object sender, EventArgs e)
@@ -54,9 +69,9 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             {
                 switch (op)
                 {
-                    case 'A': xb = addPais(); break;
-                    case 'B': xb = delPais(); break;
-                    case 'M': xb = modPais(); break;
+                    case 'A': xb = addCiutat(); break;
+                    case 'D': xb = delCiutat(); break;
+                    case 'M': xb = modCiutat(); break;
                 }
                 if (xb)
                 {
@@ -65,32 +80,20 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             }
         }
 
-        private Boolean vDades()
-        {
-            Boolean xb = true;
-
-            if ((tbPais.Text.Trim().Length == 0) || (cbContinent.SelectedItem == null))
-            {
-                MessageBox.Show("No es poden deixar dades en blanc", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                xb = false;
-            }
-            return xb;
-        }
-
-        private Boolean addPais()
+        private Boolean addCiutat()
         {
             Boolean xb = false;
 
-            Paisos p = new Paisos();
+            Ciutats c = new Ciutats();
 
             if (vDades())
             {
-                p.NomPais = tbPais.Text;
-                p.NomContinent = cbContinent.SelectedValue.ToString();
-                restaurantContext.Paisos.Add(p);
+                c.NomCiutat = tbCiutat.Text;
+                c.NomPais = cbPais.SelectedValue.ToString();
+                restaurantContext.Ciutats.Add(c);
                 if (ferCanvis())
                 {
-                    pais = tbPais.Text.Trim();
+                    ciutat = tbCiutat.Text.Trim();
                     xb = true;
                 }
                 else
@@ -103,29 +106,29 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         }
 
 
-        private Boolean delPais()
+        private Boolean delCiutat()
         {
             Boolean xb = false;
-            Paisos p = restaurantContext.Paisos.Find(tbPais.Text.Trim());  
+            Ciutats c = restaurantContext.Ciutats.Find(tbCiutat.Text.Trim());
 
-            if (p != null)
+            if (c != null)
             {
-                restaurantContext.Paisos.Remove(p);
+                restaurantContext.Ciutats.Remove(c);
                 xb = ferCanvis();
             }
             return xb;
         }
 
-        private Boolean modPais()
+        private Boolean modCiutat()
         {
-          
-            Boolean xb = false;
-            Paisos p = restaurantContext.Paisos.Find(tbPais.Text.Trim());  
 
-            if (p != null)
+            Boolean xb = false;
+            Ciutats c = restaurantContext.Ciutats.Find(tbCiutat.Text.Trim());
+
+            if (c != null)
             {
-                p.NomPais = tbPais.Text.Trim();
-                p.NomContinent = cbContinent.SelectedValue.ToString();
+                c.NomCiutat = tbCiutat.Text.Trim();
+                c.NomPais = cbPais.SelectedValue.ToString();
                 xb = ferCanvis();
             }
             return xb;
@@ -153,20 +156,17 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             return xb;
         }
 
-
-        
-
-        private void omplirComboContinents()
+        private void omplirComboPaisos()
         {
-            var qryContinents = from c in restaurantContext.Continents
-                                orderby c.NomContinent
-                                select c;
+            var qryPaisos = from p in restaurantContext.Paisos
+                            orderby p.NomPais
+                            select p;
 
 
-            cbContinent.DataSource = qryContinents.ToList();
-            cbContinent.DisplayMember = "NomContinent";
-            cbContinent.ValueMember = "NomContinent";
-            cbContinent.SelectedIndex = 0;
+            cbPais.DataSource = qryPaisos.ToList();
+            cbPais.DisplayMember = "NomPais";
+            cbPais.ValueMember = "NomPais";
+            cbPais.SelectedIndex = 0;
         }
 
         private void btCancel_Click(object sender, EventArgs e)
@@ -174,5 +174,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             pais = "";
             this.Close();
         }
+
+        
     }
 }
