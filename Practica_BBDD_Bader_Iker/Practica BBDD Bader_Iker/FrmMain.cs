@@ -12,6 +12,10 @@ namespace Practica_BBDD_Bader_Iker
 {
     public partial class FrmMain : Form
     {
+
+        string connectionString = "Data Source=BADERPC;Initial Catalog=ProjecteM6_BBDD;Integrated Security=True;";
+
+
         public FrmMain()
         {
             InitializeComponent();

@@ -1,10 +1,6 @@
 CREATE DATABASE ProjecteM6_BBDD;
 GO
 
-DROP DATABASE ProjecteM6_BBDD;
-GO
-
-
 USE ProjecteM6_BBDD;
 GO
 

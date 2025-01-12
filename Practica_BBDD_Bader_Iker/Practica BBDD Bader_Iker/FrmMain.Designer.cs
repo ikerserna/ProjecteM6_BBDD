@@ -53,7 +53,7 @@
             this.restaurantsToolStripMenuItem});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
-            this.msMain.Size = new System.Drawing.Size(800, 24);
+            this.msMain.Size = new System.Drawing.Size(1298, 24);
             this.msMain.TabIndex = 3;
             this.msMain.Text = "menuStrip1";
             // 
@@ -69,13 +69,13 @@
             // ciutatsToolStripMenuItem
             // 
             this.ciutatsToolStripMenuItem.Name = "ciutatsToolStripMenuItem";
-            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.ciutatsToolStripMenuItem.Text = "Ciutats";
             // 
             // paisosToolStripMenuItem
             // 
             this.paisosToolStripMenuItem.Name = "paisosToolStripMenuItem";
-            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.paisosToolStripMenuItem.Text = "Paisos";
             // 
             // itemsToolStripMenuItem
@@ -93,31 +93,31 @@
             // dadesToolStripMenuItem
             // 
             this.dadesToolStripMenuItem.Name = "dadesToolStripMenuItem";
-            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.dadesToolStripMenuItem.Text = "Dades";
             // 
             // galeriaToolStripMenuItem
             // 
             this.galeriaToolStripMenuItem.Name = "galeriaToolStripMenuItem";
-            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.galeriaToolStripMenuItem.Text = "Galeria";
             // 
             // miniaturaWikiToolStripMenuItem
             // 
             this.miniaturaWikiToolStripMenuItem.Name = "miniaturaWikiToolStripMenuItem";
-            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.miniaturaWikiToolStripMenuItem.Text = "Miniatura Wiki";
             // 
             // googleMapsToolStripMenuItem
             // 
             this.googleMapsToolStripMenuItem.Name = "googleMapsToolStripMenuItem";
-            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.googleMapsToolStripMenuItem.Text = "Google Maps";
             // 
             // valoracioToolStripMenuItem
             // 
             this.valoracioToolStripMenuItem.Name = "valoracioToolStripMenuItem";
-            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.valoracioToolStripMenuItem.Text = "Valoracio";
             // 
             // restaurantsToolStripMenuItem
@@ -132,20 +132,20 @@
             // galeriaToolStripMenuItem1
             // 
             this.galeriaToolStripMenuItem1.Name = "galeriaToolStripMenuItem1";
-            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
             this.galeriaToolStripMenuItem1.Text = "Galeria";
             // 
             // localsToolStripMenuItem
             // 
             this.localsToolStripMenuItem.Name = "localsToolStripMenuItem";
-            this.localsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localsToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.localsToolStripMenuItem.Text = "Locals";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1298, 727);
             this.Controls.Add(this.msMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
