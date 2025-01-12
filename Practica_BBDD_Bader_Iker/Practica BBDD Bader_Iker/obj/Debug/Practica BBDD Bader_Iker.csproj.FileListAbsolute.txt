@@ -1,0 +1,16 @@
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\Practica BBDD Bader_Iker.exe.config
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\Practica BBDD Bader_Iker.exe
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\Practica BBDD Bader_Iker.pdb
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\EntityFramework.dll
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\EntityFramework.SqlServer.dll
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\EntityFramework.xml
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\EntityFramework.SqlServer.xml
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica BBDD Bader_Iker.csproj.AssemblyReference.cache
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FORMULARIS.FrmPaisos.resources
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FrmMain.resources
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.Properties.Resources.resources
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica BBDD Bader_Iker.csproj.GenerateResource.cache
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica BBDD Bader_Iker.csproj.CoreCompileInputs.cache
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica.229DB48E.Up2Date
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica BBDD Bader_Iker.exe
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica BBDD Bader_Iker.pdb

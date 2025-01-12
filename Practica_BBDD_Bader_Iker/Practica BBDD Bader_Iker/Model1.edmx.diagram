@@ -4,24 +4,24 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2ec9e0b3013843ff8a60d8153aaaa115" Name="Diagram1">
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Ciutats" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Continents" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.GaleriaImatges" Width="1.5" PointX="9.75" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Horaris" Width="1.5" PointX="9.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Paisos" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Resenyes" Width="1.5" PointX="12.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Reserves" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Restaurants" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProjecteM6_BBDDModel.Usuaris" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Ciutats__NomPais__3C69FB99" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Restauran__NomCi__3F466844" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Paisos__NomConti__398D8EEE" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__GaleriaIm__NomRe__46E78A0C" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Horaris__nomRest__4316F928" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Resenyes__idUsua__4D94879B" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Reserves__idUsua__534D60F1" ManuallyRouted="false" />
-        <AssociationConnector Association="ProjecteM6_BBDDModel.FK__Reserves__NomRes__52593CB8" ManuallyRouted="false" />
+      <Diagram DiagramId="b7b3d17ad970468dba67a0862741d66e" Name="Diagram1">
+        <EntityTypeShape EntityType="RestaurantsDBModel.Ciutats" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Continents" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.GaleriaImatges" Width="1.5" PointX="9.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Horaris" Width="1.5" PointX="9.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Paisos" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Resenyes" Width="1.5" PointX="12.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Reserves" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Restaurants" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Usuaris" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Ciutats__NomPais__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Restauran__NomCi__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Paisos__NomConti__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__GaleriaIm__NomRe__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Horaris__nomRest__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Resenyes__idUsua__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Reserves__idUsua__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Reserves__NomRes__52593CB8" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

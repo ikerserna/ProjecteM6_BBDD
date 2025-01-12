@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practica_BBDD_Bader_Iker.FORMULARIS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,14 +14,99 @@ namespace Practica_BBDD_Bader_Iker
     public partial class FrmMain : Form
     {
 
-        string connectionString = "Data Source=BADERPC;Initial Catalog=ProjecteM6_BBDD;Integrated Security=True;";
+        private RestaurantsDBEntities restaurantContext { get; set; } = new RestaurantsDBEntities();
 
+        FrmPaisos frmPaisos = null;
 
         public FrmMain()
         {
             InitializeComponent();
         }
 
-       
+        private void paisosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String xnom = "Països";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmPaisos = new FrmPaisos(restaurantContext); 
+                frmPaisos.Name = xnom;
+                frmPaisos.MdiParent = this;
+                frmPaisos.Show();
+            }
+            frmPaisos.Activate();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            verificarConnexio();
+        }
+
+        private void verificarConnexio()
+        {
+            Boolean xb = testConnexio();
+
+            restaurantsToolStripMenuItem.Enabled = xb;
+            llocsToolStripMenuItem.Enabled = xb;
+            gestioToolStripMenuItem.Enabled = xb;  
+            verificarConexióToolStripMenuItem.Enabled = !xb;
+        }
+
+        private Boolean testConnexio()
+        {
+            Boolean xb = false;
+
+            Cursor = Cursors.WaitCursor;
+            try
+            {
+                xb = (restaurantContext.Database.Connection.State == ConnectionState.Open);
+                if (!xb)
+                {
+                    restaurantContext.Database.Connection.Open();
+                    xb = true;
+                }
+            }
+            catch (Exception excp)
+            {
+                MessageBox.Show(excp.Message, "Excepció", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            Cursor = Cursors.Default;
+            return xb;
+        }
+
+        private Boolean ja_esta_obert(String xnom)
+        {
+
+            int x1 = 0;
+            Boolean xb = false;
+
+            while ((x1 < this.MdiChildren.Length) && (!(xb)))
+            {
+                xb = (this.MdiChildren[x1].Name == xnom);
+                x1++;
+            }
+            return (xb);
+        }
+
+        private void tancarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Segur que vols sortir?", "QÜESTIÓ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void verificarConexióToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            verificarConnexio();
+        }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Segur que vols sortir?", "QÜESTIÓ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
