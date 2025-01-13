@@ -44,6 +44,8 @@
             this.valoracioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tancarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verificarConexióToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restaurantsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,13 +75,13 @@
             // galeriaToolStripMenuItem1
             // 
             this.galeriaToolStripMenuItem1.Name = "galeriaToolStripMenuItem1";
-            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.galeriaToolStripMenuItem1.Text = "Veure Galeria";
             // 
             // localsToolStripMenuItem
             // 
             this.localsToolStripMenuItem.Name = "localsToolStripMenuItem";
-            this.localsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.localsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.localsToolStripMenuItem.Text = "Locals";
             // 
             // llocsToolStripMenuItem
@@ -119,32 +121,35 @@
             // 
             // dadesToolStripMenuItem
             // 
+            this.dadesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.restaurantsToolStripMenuItem1,
+            this.categoriesToolStripMenuItem});
             this.dadesToolStripMenuItem.Name = "dadesToolStripMenuItem";
-            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.dadesToolStripMenuItem.Text = "Dades";
+            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dadesToolStripMenuItem.Text = "Dades Restarants";
             // 
             // galeriaToolStripMenuItem
             // 
             this.galeriaToolStripMenuItem.Name = "galeriaToolStripMenuItem";
-            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.galeriaToolStripMenuItem.Text = "Galeria";
             // 
             // miniaturaWikiToolStripMenuItem
             // 
             this.miniaturaWikiToolStripMenuItem.Name = "miniaturaWikiToolStripMenuItem";
-            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.miniaturaWikiToolStripMenuItem.Text = "Miniatures Wiki";
             // 
             // googleMapsToolStripMenuItem
             // 
             this.googleMapsToolStripMenuItem.Name = "googleMapsToolStripMenuItem";
-            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.googleMapsToolStripMenuItem.Text = "Google Maps";
             // 
             // valoracioToolStripMenuItem
             // 
             this.valoracioToolStripMenuItem.Name = "valoracioToolStripMenuItem";
-            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.valoracioToolStripMenuItem.Text = "Valoracions";
             // 
             // tancarToolStripMenuItem
@@ -160,6 +165,19 @@
             this.verificarConexióToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.verificarConexióToolStripMenuItem.Text = "Verificar Conexió";
             this.verificarConexióToolStripMenuItem.Click += new System.EventHandler(this.verificarConexióToolStripMenuItem_Click);
+            // 
+            // restaurantsToolStripMenuItem1
+            // 
+            this.restaurantsToolStripMenuItem1.Name = "restaurantsToolStripMenuItem1";
+            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.restaurantsToolStripMenuItem1.Text = "Restaurants";
+            // 
+            // categoriesToolStripMenuItem
+            // 
+            this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.categoriesToolStripMenuItem.Text = "Categories";
+            this.categoriesToolStripMenuItem.Click += new System.EventHandler(this.categoriesToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -198,6 +216,8 @@
         private System.Windows.Forms.ToolStripMenuItem localsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tancarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verificarConexióToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restaurantsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem categoriesToolStripMenuItem;
     }
 }
 

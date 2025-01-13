@@ -17,3 +17,4 @@ D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker
 D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FORMULARIS.FrmADMPais.resources
 D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FORMULARIS.FrmADMCiutat.resources
 D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FORMULARIS.FrmCiutats.resources
+D:\DAM2\M6\UF2\Practica BBDD Bader_Iker\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FORMULARIS.FrmCategories.resources

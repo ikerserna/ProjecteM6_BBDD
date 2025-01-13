@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="RestaurantDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="RestaurantsDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Categories">
     <Key>
       <PropertyRef Name="idCategoria" />
@@ -210,7 +210,7 @@
     <End Role="Categories" Type="Self.Categories" Multiplicity="*" />
     <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="RestaurantDBEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="RestaurantsDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Categories" EntityType="Self.Categories" />
     <EntitySet Name="Ciutats" EntityType="Self.Ciutats" />
     <EntitySet Name="Continents" EntityType="Self.Continents" />

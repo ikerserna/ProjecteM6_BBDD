@@ -19,6 +19,7 @@ namespace Practica_BBDD_Bader_Iker
 
         FrmPaisos frmPaisos = null;
         FrmCiutats frmCiutats = null;
+        FrmCategories frmCategories = null;
 
         public FrmMain()
         {
@@ -50,6 +51,20 @@ namespace Practica_BBDD_Bader_Iker
                 frmCiutats.Show();
             }
             frmCiutats.Activate();
+        }
+
+        private void categoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String xnom = "Categories";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmCategories = new FrmCategories(restaurantContext);
+                frmCategories.Name = xnom;
+                frmCategories.MdiParent = this;
+                frmCategories.Show();
+            }
+            frmCategories.Activate();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -125,5 +140,6 @@ namespace Practica_BBDD_Bader_Iker
             }
         }
 
+        
     }
 }
