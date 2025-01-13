@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
-    public partial class FrmCatEstrellesMichelin : Form
+    public partial class FrmCategories : Form
     {
-        public FrmCatEstrellesMichelin()
+        public FrmCategories()
         {
             InitializeComponent();
+        }
+
+
+        private void pbAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbDel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

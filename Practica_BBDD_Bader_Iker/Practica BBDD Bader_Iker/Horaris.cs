@@ -15,7 +15,7 @@ namespace Practica_BBDD_Bader_Iker
     public partial class Horaris
     {
         public int idHorari { get; set; }
-        public string nomRestaurant { get; set; }
+        public Nullable<int> idRestaurant { get; set; }
         public string diaSetmana { get; set; }
         public Nullable<System.TimeSpan> horaObertura { get; set; }
         public Nullable<System.TimeSpan> horaTancament { get; set; }

@@ -24,7 +24,8 @@ CREATE TABLE Ciutats (
 );
 
 CREATE TABLE Restaurants (
-    Nom NVARCHAR(60) PRIMARY KEY,
+    Nom NVARCHAR(60),
+	idRestaurant INT IDENTITY(1,1) PRIMARY KEY,
     estrellesMichellin INT,
     NomCiutat NVARCHAR(60),
     Adresa NVARCHAR(60),
@@ -39,23 +40,35 @@ CREATE TABLE Restaurants (
 );
 
 
+CREATE TABLE Categories(
+	idCategoria INT IDENTITY(1,1) PRIMARY KEY,
+	descripcioCategoria NVARCHAR(30)
+);
+
+CREATE TABLE RestaurantCategories (
+    idRestaurant INT,
+    idCategoria INT,
+    PRIMARY KEY (idRestaurant, idCategoria),
+    FOREIGN KEY (idRestaurant) REFERENCES Restaurants(idRestaurant),
+    FOREIGN KEY (idCategoria) REFERENCES Categories(idCategoria)
+);
 
 CREATE TABLE Horaris (
     idHorari INT IDENTITY(1,1) PRIMARY KEY,
-    nomRestaurant NVARCHAR(60),
+    idRestaurant INT,
     diaSetmana NVARCHAR(20),
     horaObertura TIME,
     horaTancament TIME,
-    FOREIGN KEY (nomRestaurant) REFERENCES Restaurants(Nom), 
-    CONSTRAINT UNQ_HORARI UNIQUE (nomRestaurant, diaSetmana),
+    FOREIGN KEY (idRestaurant) REFERENCES Restaurants(idRestaurant), 
+    CONSTRAINT UNQ_HORARI UNIQUE (idRestaurant, diaSetmana),
     CONSTRAINT CHK_DiaSetmana CHECK (diaSetmana IN ('dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'dissabte', 'diumenge'))
 );
 
 CREATE TABLE GaleriaImatges (
     nomImatge NVARCHAR(60),
     idImatge INT PRIMARY KEY,
-    NomRestaurant NVARCHAR(60),
-    FOREIGN KEY (NomRestaurant) REFERENCES Restaurants(Nom)
+    idRestaurant INT,
+    FOREIGN KEY (idRestaurant) REFERENCES Restaurants(idRestaurant)
 );
 
 CREATE TABLE Usuaris (
@@ -76,14 +89,14 @@ CREATE TABLE Resenyes (
 
 CREATE TABLE Reserves (
     IDReserva INT IDENTITY(1,1) PRIMARY KEY,
-    NomRestaurant NVARCHAR(60),
+    idRestaurant INT,
     idUsuari INT,
     DataReserva DATE,
     HoraReserva TIME,
     NumeroPersones INT CHECK (NumeroPersones > 0),
-    FOREIGN KEY (NomRestaurant) REFERENCES Restaurants(Nom),
+    FOREIGN KEY (idRestaurant) REFERENCES Restaurants(idRestaurant),
     FOREIGN KEY (idUsuari) REFERENCES Usuaris(idUsuari),
-    CONSTRAINT UNQ_Reserves UNIQUE (NomRestaurant, DataReserva, HoraReserva),
+    CONSTRAINT UNQ_Reserves UNIQUE (idRestaurant, DataReserva, HoraReserva),
     CONSTRAINT CK_NumeroPersones CHECK (NumeroPersones BETWEEN 1 AND 20)
 );
 GO
@@ -93,14 +106,14 @@ ON Reserves
 FOR INSERT
 AS
 BEGIN
-    DECLARE @NomRestaurant NVARCHAR(60),
+    DECLARE @idRestaurant INT,
             @HoraReserva TIME,
             @DataReserva DATE,
             @DiaSetmana NVARCHAR(20),
             @HoraApertura TIME,
             @HoraCierre TIME;
     
-    SELECT @NomRestaurant = NomRestaurant, 
+    SELECT @idRestaurant = idRestaurant, 
            @HoraReserva = HoraReserva, 
            @DataReserva = DataReserva
     FROM INSERTED;
@@ -109,7 +122,7 @@ BEGIN
     
     SELECT @HoraApertura = horaObertura, @HoraCierre = horaTancament
     FROM Horaris
-    WHERE nomRestaurant = @NomRestaurant 
+    WHERE idRestaurant = @idRestaurant
       AND diaSetmana = @DiaSetmana;
 
     IF @HoraReserva < @HoraApertura OR @HoraReserva > @HoraCierre
@@ -151,14 +164,15 @@ INSERT INTO Restaurants (Nom, estrellesMichellin, NomCiutat, Adresa, CodiPostal,
 	('Le Bernardin', 3, 'Nova York', '155 W 51st St', '10019', 'contacte@lebernardin.com', '2125551234', 'imatge2.jpg', 'http://lebernardin.com', 'https://goo.gl/maps/yyyyyy', 'Francesa'),
 	('Narisawa', 2, 'Tòquio', 'Minato City, 2 Chome-6-15', '107-0062', 'contacte@narizawa.com', '03-5785-1234', 'imatge3.jpg', 'http://narizawa.com', 'https://goo.gl/maps/zzzzzz', 'Japonesa');
 
--- Dades de Horaris
-INSERT INTO Horaris (nomRestaurant, diaSetmana, horaObertura, horaTancament) VALUES
-	('El Celler de Can Roca', 'dilluns', '12:00', '23:00'),
-	('El Celler de Can Roca', 'dimarts', '12:00', '23:00'),
-	('Le Bernardin', 'dilluns', '12:00', '22:00'),
-	('Le Bernardin', 'dimarts', '12:00', '22:00'),
-	('Narisawa', 'dilluns', '18:00', '22:00'),
-	('Narisawa', 'dimarts', '18:00', '22:00');
+-- Dades de Horaris (corrigiendo `nomRestaurant` a `idRestaurant`)
+INSERT INTO Horaris (idRestaurant, diaSetmana, horaObertura, horaTancament) VALUES
+    (1, 'dilluns', '12:00', '23:00'),
+    (1, 'dimarts', '12:00', '23:00'),
+    (2, 'dilluns', '12:00', '22:00'),
+    (2, 'dimarts', '12:00', '22:00'),
+    (3, 'dilluns', '18:00', '22:00'),
+    (3, 'dimarts', '18:00', '22:00');
+
 
 -- Dades d'Usuaris
 INSERT INTO Usuaris (NomUsuari, Correu, Telefon, Contrassenya) VALUES
@@ -170,8 +184,25 @@ INSERT INTO Resenyes (resenya, valoracio, idUsuari) VALUES
 	('Excel·lent restaurant, el menjar és espectacular i el servei és de primera.', 5, 1),
 	('Molt bona experiència, tot i que el preu és una mica elevat.', 4, 2);
 
--- Dades de Reserves
-INSERT INTO Reserves (NomRestaurant, idUsuari, DataReserva, HoraReserva, NumeroPersones) VALUES
-	('El Celler de Can Roca', 1, '2025-01-15', '13:00', 4),
-	('Le Bernardin', 2, '2025-01-16', '19:00', 2),
-	('Narisawa', 1, '2025-01-17', '20:00', 3);
+
+	-- Dades de Reserves (corrigiendo `NomRestaurant` a `idRestaurant`)
+INSERT INTO Reserves (idRestaurant, idUsuari, DataReserva, HoraReserva, NumeroPersones) VALUES
+    (1, 1, '2025-01-15', '13:00', 4),
+    (2, 2, '2025-01-16', '19:00', 2),
+    (3, 1, '2025-01-17', '20:00', 3);
+
+	-- Dades de Categories
+INSERT INTO Categories (descripcioCategoria) VALUES
+    ('1 Estrella Michelin'),
+    ('2 Estrellas Michelin'),
+    ('3 Estrellas Michelin'),
+    ('Gastronomía Mediterránea'),
+    ('Gastronomía Japonesa');
+
+-- Asociar restaurantes con categorías
+INSERT INTO RestaurantCategories (idRestaurant, idCategoria) VALUES
+    (1, 3), -- El restaurante 1 tiene "3 Estrellas Michelin"
+    (1, 4), -- El restaurante 1 también tiene "Gastronomía Mediterránea"
+    (2, 3), -- El restaurante 2 tiene "3 Estrellas Michelin"
+    (3, 2), -- El restaurante 3 tiene "2 Estrellas Michelin"
+    (3, 5); -- El restaurante 3 tiene "Gastronomía Japonesa"

@@ -1,8 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="RestaurantsDBModelStoreContainer" CdmEntityContainer="RestaurantsDBEntities">
+  <EntityContainerMapping StorageEntityContainer="RestaurantDBModelStoreContainer" CdmEntityContainer="RestaurantDBEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="descripcioCategoria" ColumnName="descripcioCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Ciutats">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Ciutats">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Ciutats">
         <MappingFragment StoreEntitySet="Ciutats">
           <ScalarProperty Name="NomCiutat" ColumnName="NomCiutat" />
           <ScalarProperty Name="NomPais" ColumnName="NomPais" />
@@ -10,26 +18,26 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Continents">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Continents">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Continents">
         <MappingFragment StoreEntitySet="Continents">
           <ScalarProperty Name="NomContinent" ColumnName="NomContinent" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="GaleriaImatges">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.GaleriaImatges">
+      <EntityTypeMapping TypeName="RestaurantDBModel.GaleriaImatges">
         <MappingFragment StoreEntitySet="GaleriaImatges">
           <ScalarProperty Name="nomImatge" ColumnName="nomImatge" />
           <ScalarProperty Name="idImatge" ColumnName="idImatge" />
-          <ScalarProperty Name="NomRestaurant" ColumnName="NomRestaurant" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Horaris">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Horaris">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Horaris">
         <MappingFragment StoreEntitySet="Horaris">
           <ScalarProperty Name="idHorari" ColumnName="idHorari" />
-          <ScalarProperty Name="nomRestaurant" ColumnName="nomRestaurant" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
           <ScalarProperty Name="diaSetmana" ColumnName="diaSetmana" />
           <ScalarProperty Name="horaObertura" ColumnName="horaObertura" />
           <ScalarProperty Name="horaTancament" ColumnName="horaTancament" />
@@ -37,7 +45,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Paisos">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Paisos">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Paisos">
         <MappingFragment StoreEntitySet="Paisos">
           <ScalarProperty Name="NomPais" ColumnName="NomPais" />
           <ScalarProperty Name="NomContinent" ColumnName="NomContinent" />
@@ -45,7 +53,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Resenyes">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Resenyes">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Resenyes">
         <MappingFragment StoreEntitySet="Resenyes">
           <ScalarProperty Name="idResenya" ColumnName="idResenya" />
           <ScalarProperty Name="resenya" ColumnName="resenya" />
@@ -55,10 +63,10 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Reserves">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Reserves">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Reserves">
         <MappingFragment StoreEntitySet="Reserves">
           <ScalarProperty Name="IDReserva" ColumnName="IDReserva" />
-          <ScalarProperty Name="NomRestaurant" ColumnName="NomRestaurant" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
           <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
           <ScalarProperty Name="DataReserva" ColumnName="DataReserva" />
           <ScalarProperty Name="HoraReserva" ColumnName="HoraReserva" />
@@ -67,9 +75,10 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Restaurants">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Restaurants">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Restaurants">
         <MappingFragment StoreEntitySet="Restaurants">
           <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
           <ScalarProperty Name="estrellesMichellin" ColumnName="estrellesMichellin" />
           <ScalarProperty Name="NomCiutat" ColumnName="NomCiutat" />
           <ScalarProperty Name="Adresa" ColumnName="Adresa" />
@@ -84,7 +93,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Usuaris">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Usuaris">
+      <EntityTypeMapping TypeName="RestaurantDBModel.Usuaris">
         <MappingFragment StoreEntitySet="Usuaris">
           <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
           <ScalarProperty Name="NomUsuari" ColumnName="NomUsuari" />
@@ -94,5 +103,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <AssociationSetMapping Name="RestaurantCategories" TypeName="RestaurantDBModel.RestaurantCategories" StoreEntitySet="RestaurantCategories">
+      <EndProperty Name="Categories">
+        <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+      </EndProperty>
+      <EndProperty Name="Restaurants">
+        <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

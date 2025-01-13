@@ -20,9 +20,11 @@ namespace Practica_BBDD_Bader_Iker
             this.GaleriaImatges = new HashSet<GaleriaImatges>();
             this.Horaris = new HashSet<Horaris>();
             this.Reserves = new HashSet<Reserves>();
+            this.Categories = new HashSet<Categories>();
         }
     
         public string Nom { get; set; }
+        public int idRestaurant { get; set; }
         public Nullable<int> estrellesMichellin { get; set; }
         public string NomCiutat { get; set; }
         public string Adresa { get; set; }
@@ -41,5 +43,7 @@ namespace Practica_BBDD_Bader_Iker
         public virtual ICollection<Horaris> Horaris { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reserves> Reserves { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Categories> Categories { get; set; }
     }
 }

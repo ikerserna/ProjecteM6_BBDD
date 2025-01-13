@@ -12,16 +12,18 @@ namespace Practica_BBDD_Bader_Iker
     using System;
     using System.Collections.Generic;
     
-    public partial class Reserves
+    public partial class Categories
     {
-        public int IDReserva { get; set; }
-        public Nullable<int> idRestaurant { get; set; }
-        public Nullable<int> idUsuari { get; set; }
-        public Nullable<System.DateTime> DataReserva { get; set; }
-        public Nullable<System.TimeSpan> HoraReserva { get; set; }
-        public Nullable<int> NumeroPersones { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Categories()
+        {
+            this.Restaurants = new HashSet<Restaurants>();
+        }
     
-        public virtual Restaurants Restaurants { get; set; }
-        public virtual Usuaris Usuaris { get; set; }
+        public int idCategoria { get; set; }
+        public string descripcioCategoria { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Restaurants> Restaurants { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace Practica_BBDD_Bader_Iker
     {
         public string nomImatge { get; set; }
         public int idImatge { get; set; }
-        public string NomRestaurant { get; set; }
+        public Nullable<int> idRestaurant { get; set; }
     
         public virtual Restaurants Restaurants { get; set; }
     }

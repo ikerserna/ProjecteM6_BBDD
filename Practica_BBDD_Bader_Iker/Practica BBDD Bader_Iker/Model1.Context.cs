@@ -25,6 +25,7 @@ namespace Practica_BBDD_Bader_Iker
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Ciutats> Ciutats { get; set; }
         public virtual DbSet<Continents> Continents { get; set; }
         public virtual DbSet<GaleriaImatges> GaleriaImatges { get; set; }
