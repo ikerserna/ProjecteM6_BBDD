@@ -34,7 +34,7 @@
             this.btAfegir = new System.Windows.Forms.Button();
             this.gbCat = new System.Windows.Forms.GroupBox();
             this.lbCat = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCat = new System.Windows.Forms.TextBox();
             this.pbAdd = new System.Windows.Forms.PictureBox();
             this.pbDel = new System.Windows.Forms.PictureBox();
             this.lbRestaurants = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.dgRestCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgRestCat.Location = new System.Drawing.Point(491, 50);
             this.dgRestCat.Name = "dgRestCat";
+            this.dgRestCat.ReadOnly = true;
             this.dgRestCat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgRestCat.Size = new System.Drawing.Size(487, 432);
             this.dgRestCat.TabIndex = 7;
@@ -61,8 +62,10 @@
             // 
             this.dgCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCategories.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgCategories.Location = new System.Drawing.Point(150, 76);
             this.dgCategories.Name = "dgCategories";
+            this.dgCategories.ReadOnly = true;
             this.dgCategories.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgCategories.Size = new System.Drawing.Size(288, 252);
             this.dgCategories.TabIndex = 8;
@@ -73,6 +76,7 @@
             this.dgRestaurants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgRestaurants.Location = new System.Drawing.Point(12, 50);
             this.dgRestaurants.Name = "dgRestaurants";
+            this.dgRestaurants.ReadOnly = true;
             this.dgRestaurants.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgRestaurants.Size = new System.Drawing.Size(448, 207);
             this.dgRestaurants.TabIndex = 9;
@@ -93,7 +97,7 @@
             // 
             this.gbCat.BackColor = System.Drawing.Color.Transparent;
             this.gbCat.Controls.Add(this.lbCat);
-            this.gbCat.Controls.Add(this.textBox1);
+            this.gbCat.Controls.Add(this.tbCat);
             this.gbCat.Controls.Add(this.dgCategories);
             this.gbCat.Controls.Add(this.pbAdd);
             this.gbCat.Controls.Add(this.pbDel);
@@ -116,12 +120,12 @@
             this.lbCat.TabIndex = 20;
             this.lbCat.Text = "Nova Categoria";
             // 
-            // textBox1
+            // tbCat
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 32);
-            this.textBox1.TabIndex = 15;
+            this.tbCat.Location = new System.Drawing.Point(150, 38);
+            this.tbCat.Name = "tbCat";
+            this.tbCat.Size = new System.Drawing.Size(288, 32);
+            this.tbCat.TabIndex = 15;
             // 
             // pbAdd
             // 
@@ -206,6 +210,6 @@
         private System.Windows.Forms.Label lbRestaurants;
         private System.Windows.Forms.Label lbResCat;
         private System.Windows.Forms.Label lbCat;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCat;
     }
 }

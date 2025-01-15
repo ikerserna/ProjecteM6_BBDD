@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,20 +22,46 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             restaurantContext = xres;
         }
 
+        private void gridInit()
+        {
+            //dgCategories.Columns["idCategoria"].Visible = false;
+            dgCategories.Columns["descripcioCategoria"].HeaderText = "Categoria";
+            dgCategories.Columns["Restaurants"].Visible = false;
+            dgRestaurants.Columns["nomRestaurant"].DisplayIndex = 0;
+            dgRestaurants.Columns["idRes"].Visible = false;
+        }
+
         private void FrmCategories_Load(object sender, EventArgs e)
         {
-            getDades(); 
+            getDades();
+            gridInit();
         }
 
 
         private void pbAdd_Click(object sender, EventArgs e)
         {
+            Categories c = new Categories();
 
+            if (vDades())
+            {
+                c.descripcioCategoria = tbCat.Text;
+                restaurantContext.Categories.Add(c);
+                ferCanvis();
+                getDades();
+            }
         }
 
         private void pbDel_Click(object sender, EventArgs e)
         {
+            
+            Categories c = restaurantContext.Categories.Find(dgCategories.SelectedRows[0].Cells["idCategoria"].Value);
 
+            if (c != null)
+            {
+                restaurantContext.Categories.Remove(c);
+                ferCanvis();
+                getDades();
+            }
         }
 
       
@@ -76,6 +103,37 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             //dgRestCat.DataSource = qryResCategories.ToList();
         }
 
-       
+        private Boolean vDades()
+        {
+            Boolean xb = true;
+
+            if (tbCat.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("No hi has posata nom a la categoria que vols afegir", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                xb = false;
+            }
+            return xb;
+        }
+        private Boolean ferCanvis()
+        {
+            Boolean xb = false;
+            try
+            {
+                restaurantContext.SaveChanges();
+                xb = true;
+            }
+            catch (Exception excp)
+            {
+                MessageBox.Show(excp.InnerException.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                foreach (var accio in restaurantContext.ChangeTracker.Entries())
+                {
+                    accio.State = EntityState.Detached;
+                }
+
+            }
+            return xb;
+        }
+
     }
 }

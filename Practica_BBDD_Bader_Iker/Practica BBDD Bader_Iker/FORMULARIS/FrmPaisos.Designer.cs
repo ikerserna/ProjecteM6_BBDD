@@ -45,6 +45,7 @@
             this.dgPaisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgPaisos.Location = new System.Drawing.Point(12, 75);
             this.dgPaisos.Name = "dgPaisos";
+            this.dgPaisos.ReadOnly = true;
             this.dgPaisos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgPaisos.Size = new System.Drawing.Size(489, 371);
             this.dgPaisos.TabIndex = 0;

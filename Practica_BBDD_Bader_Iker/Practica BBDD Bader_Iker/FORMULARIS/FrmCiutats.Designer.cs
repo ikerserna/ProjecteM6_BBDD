@@ -78,6 +78,7 @@
             this.dgCiutats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCiutats.Location = new System.Drawing.Point(12, 58);
             this.dgCiutats.Name = "dgCiutats";
+            this.dgCiutats.ReadOnly = true;
             this.dgCiutats.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgCiutats.Size = new System.Drawing.Size(426, 371);
             this.dgCiutats.TabIndex = 6;
