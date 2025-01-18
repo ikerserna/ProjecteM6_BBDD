@@ -82,7 +82,6 @@
     </Key>
     <Property Name="Nom" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="idRestaurant" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="estrellesMichellin" Type="Int32" />
     <Property Name="NomCiutat" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="Adresa" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="CodiPostal" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />

@@ -39,12 +39,15 @@
             this.pbDel = new System.Windows.Forms.PictureBox();
             this.lbRestaurants = new System.Windows.Forms.Label();
             this.lbResCat = new System.Windows.Forms.Label();
+            this.gbGestioCat = new System.Windows.Forms.GroupBox();
+            this.btEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgRestCat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCategories)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgRestaurants)).BeginInit();
             this.gbCat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDel)).BeginInit();
+            this.gbGestioCat.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgRestCat
@@ -85,11 +88,11 @@
             // 
             this.btAfegir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btAfegir.Font = new System.Drawing.Font("Verdana", 15F);
-            this.btAfegir.Location = new System.Drawing.Point(491, 494);
+            this.btAfegir.Location = new System.Drawing.Point(20, 23);
             this.btAfegir.Name = "btAfegir";
-            this.btAfegir.Size = new System.Drawing.Size(487, 125);
+            this.btAfegir.Size = new System.Drawing.Size(217, 85);
             this.btAfegir.TabIndex = 16;
-            this.btAfegir.Text = "Afegir Categoria al Restaurant Seleccionat";
+            this.btAfegir.Text = "Afegir Categoria al Restaurant";
             this.btAfegir.UseVisualStyleBackColor = false;
             this.btAfegir.Click += new System.EventHandler(this.btAfegir_Click);
             // 
@@ -143,9 +146,9 @@
             // 
             this.pbDel.BackColor = System.Drawing.Color.Transparent;
             this.pbDel.Image = global::Practica_BBDD_Bader_Iker.Properties.Resources.remove;
-            this.pbDel.Location = new System.Drawing.Point(28, 214);
+            this.pbDel.Location = new System.Drawing.Point(34, 220);
             this.pbDel.Name = "pbDel";
-            this.pbDel.Size = new System.Drawing.Size(92, 94);
+            this.pbDel.Size = new System.Drawing.Size(85, 91);
             this.pbDel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDel.TabIndex = 14;
             this.pbDel.TabStop = false;
@@ -171,16 +174,40 @@
             this.lbResCat.TabIndex = 19;
             this.lbResCat.Text = "Restaurants i Categories";
             // 
+            // gbGestioCat
+            // 
+            this.gbGestioCat.Controls.Add(this.btEliminar);
+            this.gbGestioCat.Controls.Add(this.btAfegir);
+            this.gbGestioCat.Font = new System.Drawing.Font("Verdana", 12F);
+            this.gbGestioCat.Location = new System.Drawing.Point(491, 494);
+            this.gbGestioCat.Name = "gbGestioCat";
+            this.gbGestioCat.Size = new System.Drawing.Size(487, 125);
+            this.gbGestioCat.TabIndex = 20;
+            this.gbGestioCat.TabStop = false;
+            this.gbGestioCat.Text = "Gestio Categories";
+            // 
+            // btEliminar
+            // 
+            this.btEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btEliminar.Font = new System.Drawing.Font("Verdana", 15F);
+            this.btEliminar.Location = new System.Drawing.Point(256, 23);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(209, 85);
+            this.btEliminar.TabIndex = 17;
+            this.btEliminar.Text = "Eliminar Categoria del Restaurant";
+            this.btEliminar.UseVisualStyleBackColor = false;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
+            // 
             // FrmCategories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(990, 631);
+            this.Controls.Add(this.gbGestioCat);
             this.Controls.Add(this.lbResCat);
             this.Controls.Add(this.lbRestaurants);
             this.Controls.Add(this.gbCat);
-            this.Controls.Add(this.btAfegir);
             this.Controls.Add(this.dgRestaurants);
             this.Controls.Add(this.dgRestCat);
             this.Name = "FrmCategories";
@@ -193,6 +220,7 @@
             this.gbCat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDel)).EndInit();
+            this.gbGestioCat.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +239,7 @@
         private System.Windows.Forms.Label lbResCat;
         private System.Windows.Forms.Label lbCat;
         private System.Windows.Forms.TextBox tbCat;
+        private System.Windows.Forms.GroupBox gbGestioCat;
+        private System.Windows.Forms.Button btEliminar;
     }
 }

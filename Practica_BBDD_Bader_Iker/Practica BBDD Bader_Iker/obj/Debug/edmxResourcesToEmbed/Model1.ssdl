@@ -79,7 +79,6 @@
     </Key>
     <Property Name="Nom" Type="nvarchar" MaxLength="60" />
     <Property Name="idRestaurant" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="estrellesMichellin" Type="int" />
     <Property Name="NomCiutat" Type="nvarchar" MaxLength="60" />
     <Property Name="Adresa" Type="nvarchar" MaxLength="60" />
     <Property Name="CodiPostal" Type="nvarchar" MaxLength="20" />

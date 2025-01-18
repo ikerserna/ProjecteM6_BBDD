@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="RestaurantsDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="RestaurantsDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Categories">
           <Key>
             <PropertyRef Name="idCategoria" />
@@ -84,7 +84,6 @@
           </Key>
           <Property Name="Nom" Type="nvarchar" MaxLength="60" />
           <Property Name="idRestaurant" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="estrellesMichellin" Type="int" />
           <Property Name="NomCiutat" Type="nvarchar" MaxLength="60" />
           <Property Name="Adresa" Type="nvarchar" MaxLength="60" />
           <Property Name="CodiPostal" Type="nvarchar" MaxLength="20" />
@@ -278,8 +277,7 @@
             <End Role="Restaurants" EntitySet="Restaurants" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="RestaurantsDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -365,7 +363,6 @@
           </Key>
           <Property Name="Nom" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
           <Property Name="idRestaurant" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="estrellesMichellin" Type="Int32" />
           <Property Name="NomCiutat" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
           <Property Name="Adresa" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
           <Property Name="CodiPostal" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
@@ -625,7 +622,6 @@
               <MappingFragment StoreEntitySet="Restaurants">
                 <ScalarProperty Name="Nom" ColumnName="Nom" />
                 <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
-                <ScalarProperty Name="estrellesMichellin" ColumnName="estrellesMichellin" />
                 <ScalarProperty Name="NomCiutat" ColumnName="NomCiutat" />
                 <ScalarProperty Name="Adresa" ColumnName="Adresa" />
                 <ScalarProperty Name="CodiPostal" ColumnName="CodiPostal" />

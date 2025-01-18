@@ -26,7 +26,6 @@ CREATE TABLE Ciutats (
 CREATE TABLE Restaurants (
     Nom NVARCHAR(60),
 	idRestaurant INT IDENTITY(1,1) PRIMARY KEY,
-    estrellesMichellin INT,
     NomCiutat NVARCHAR(60),
     Adresa NVARCHAR(60),
     CodiPostal NVARCHAR(20),    
@@ -159,10 +158,10 @@ INSERT INTO Ciutats (NomCiutat, NomPais) VALUES
 	('Nova York', 'EE.UU.');
 
 -- Dades de Restaurants
-INSERT INTO Restaurants (Nom, estrellesMichellin, NomCiutat, Adresa, CodiPostal, eMail, TelefonContacte, MiniaturaWeb, LinkWeb, GoogleMapsLink, CuinaEspecialitzada) VALUES
-	('El Celler de Can Roca', 3, 'Barcelona', 'Carrer de Can Roca, 1', '08001', 'contacte@cellercanroca.com', '934567890', 'imatge.jpg', 'http://cellercanroca.com', 'https://goo.gl/maps/xxxxxx', 'Mediterrània'),
-	('Le Bernardin', 3, 'Nova York', '155 W 51st St', '10019', 'contacte@lebernardin.com', '2125551234', 'imatge2.jpg', 'http://lebernardin.com', 'https://goo.gl/maps/yyyyyy', 'Francesa'),
-	('Narisawa', 2, 'Tòquio', 'Minato City, 2 Chome-6-15', '107-0062', 'contacte@narizawa.com', '03-5785-1234', 'imatge3.jpg', 'http://narizawa.com', 'https://goo.gl/maps/zzzzzz', 'Japonesa');
+INSERT INTO Restaurants (Nom, NomCiutat, Adresa, CodiPostal, eMail, TelefonContacte, MiniaturaWeb, LinkWeb, GoogleMapsLink, CuinaEspecialitzada) VALUES
+	('El Celler de Can Roca', 'Barcelona', 'Carrer de Can Roca, 1', '08001', 'contacte@cellercanroca.com', '934567890', 'imatge.jpg', 'http://cellercanroca.com', 'https://goo.gl/maps/xxxxxx', 'Mediterrània'),
+	('Le Bernardin', 'Nova York', '155 W 51st St', '10019', 'contacte@lebernardin.com', '2125551234', 'imatge2.jpg', 'http://lebernardin.com', 'https://goo.gl/maps/yyyyyy', 'Francesa'),
+	('Narisawa','Tòquio', 'Minato City, 2 Chome-6-15', '107-0062', 'contacte@narizawa.com', '03-5785-1234', 'imatge3.jpg', 'http://narizawa.com', 'https://goo.gl/maps/zzzzzz', 'Japonesa');
 
 -- Dades de Horaris (corrigiendo `nomRestaurant` a `idRestaurant`)
 INSERT INTO Horaris (idRestaurant, diaSetmana, horaObertura, horaTancament) VALUES
