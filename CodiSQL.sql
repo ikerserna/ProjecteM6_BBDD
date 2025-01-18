@@ -44,7 +44,7 @@ CREATE TABLE Categories(
 	descripcioCategoria NVARCHAR(30)
 );
 
-CREATE TABLE RestaurantCategories (
+CREATE TABLE   (
     idRestaurant INT,
     idCategoria INT,
     PRIMARY KEY (idRestaurant, idCategoria),
