@@ -71,7 +71,6 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
                     else
                     {
                         dgvGestioGaleria.Rows.Clear();
-                        MessageBox.Show("No s'han trobat imatges d'aquest restaurant.");
                     }
                 }
             }

@@ -58,6 +58,7 @@
             // 
             // pbFoto
             // 
+            this.pbFoto.Image = global::Practica_BBDD_Bader_Iker.Properties.Resources.camera_off;
             this.pbFoto.Location = new System.Drawing.Point(141, 65);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(398, 328);

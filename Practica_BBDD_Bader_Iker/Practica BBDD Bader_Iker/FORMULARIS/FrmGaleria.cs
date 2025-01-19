@@ -49,10 +49,6 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
                 {
                     LoadRestaurantImages();
                 }
-                else
-                {
-                    MessageBox.Show("El valor seleccionado no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
         }
 
@@ -68,16 +64,16 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 
             if (restaurantImages.Count > 0)
             {
-                DisplayCurrentImage();
+                MostrarImatgeActual();
             }
             else
             {
                 MessageBox.Show("Aquest restaurant no té imatges.");
-                pbFoto.Image = null;
+                pbFoto.Image = Properties.Resources.camera_off;
             }
         }
 
-        private void DisplayCurrentImage()
+        private void MostrarImatgeActual()
         {
             if (restaurantImages.Count > 0 && currentImageIndex >= 0 && currentImageIndex < restaurantImages.Count)
             {
@@ -100,7 +96,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             if (currentImageIndex > 0)
             {
                 currentImageIndex--;
-                DisplayCurrentImage();
+                MostrarImatgeActual();
             }
         }
 
@@ -109,7 +105,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             if (currentImageIndex < restaurantImages.Count - 1)
             {
                 currentImageIndex++;
-                DisplayCurrentImage();
+                MostrarImatgeActual();
             }
         }
     }
