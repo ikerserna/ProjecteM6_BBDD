@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\Model1.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\BDRestaurantsIker.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

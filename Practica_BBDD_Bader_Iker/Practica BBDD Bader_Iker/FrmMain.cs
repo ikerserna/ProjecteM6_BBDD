@@ -14,7 +14,7 @@ namespace Practica_BBDD_Bader_Iker
     public partial class FrmMain : Form
     {
 
-        private RestaurantsDBEntities restaurantContext { get; set; } = new RestaurantsDBEntities();
+        private RestaurantsDBEntitiesIker1 restaurantContext { get; set; } = new RestaurantsDBEntitiesIker1();
         
 
         FrmPaisos frmPaisos = null;

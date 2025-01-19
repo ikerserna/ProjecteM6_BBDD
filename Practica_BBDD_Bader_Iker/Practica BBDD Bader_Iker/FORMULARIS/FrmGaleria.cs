@@ -12,12 +12,12 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
     public partial class FrmGaleria : Form
     {
-        private RestaurantsDBEntities restaurantContext { get; set; } = new RestaurantsDBEntities();
+        private RestaurantsDBEntitiesIker1 restaurantContext { get; set; } = new RestaurantsDBEntitiesIker1();
         private int restaurantId;
         private int currentImageIndex = 0;
         private System.Collections.Generic.List<GaleriaImatges> restaurantImages = new System.Collections.Generic.List<GaleriaImatges>();
 
-        public FrmGaleria(RestaurantsDBEntities restaurantContext)
+        public FrmGaleria(RestaurantsDBEntitiesIker1 restaurantContext)
         {
             InitializeComponent();
             this.restaurantContext = restaurantContext;

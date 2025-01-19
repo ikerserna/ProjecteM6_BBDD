@@ -14,9 +14,9 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
     public partial class FrmRestaurantsGestio : Form
     {
 
-        private RestaurantsDBEntities restaurantContext { get; set; }
+        private RestaurantsDBEntitiesIker1 restaurantContext { get; set; }
 
-        public FrmRestaurantsGestio(RestaurantsDBEntities xres)
+        public FrmRestaurantsGestio(RestaurantsDBEntitiesIker1 xres)
         {
             InitializeComponent();
             restaurantContext = xres;

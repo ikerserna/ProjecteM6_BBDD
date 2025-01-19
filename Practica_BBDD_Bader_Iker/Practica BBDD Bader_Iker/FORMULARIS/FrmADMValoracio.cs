@@ -13,12 +13,12 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
     public partial class FrmADMValoracio : Form
     {
-        private RestaurantsDBEntities restaurantContext;
+        private RestaurantsDBEntitiesIker1 restaurantContext;
         private Resenyes resenyaActual;
         int valoracioActual;
         Char accio;
 
-        public FrmADMValoracio(RestaurantsDBEntities restaurantContext, char accio, Resenyes resenya = null)
+        public FrmADMValoracio(RestaurantsDBEntitiesIker1 restaurantContext, char accio, Resenyes resenya = null)
         {
             InitializeComponent();
             this.restaurantContext = restaurantContext;
@@ -54,7 +54,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         {
             if (resenyaActual != null)
             {
-                tbUsuari.Text = resenyaActual.Usuari;
+                tbUsuari.Text = resenyaActual.nomUsuari;
                 tbResenya.Text = resenyaActual.descripcio;
                 valoracioActual = resenyaActual.valoracio.GetValueOrDefault();
                 cbRestaurants.SelectedValue = resenyaActual.idRestaurant;
@@ -132,7 +132,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 
             if (r != null)
             {
-                r.Usuari = tbUsuari.Text;
+                r.nomUsuari = tbUsuari.Text;
                 r.descripcio = tbResenya.Text;
                 r.valoracio = valoracioActual;
                 xb = ferCanvis();
@@ -167,7 +167,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
                 int nextId = qryIdResenya.Any() ? qryIdResenya.First().idResenya + 1 : 1;
 
                 rs.idResenya = nextId;
-                rs.Usuari = tbUsuari.Text;
+                rs.nomUsuari = tbUsuari.Text;
                 rs.descripcio = tbResenya.Text;
                 rs.valoracio = valoracioActual;
                 rs.idRestaurant = cbRestaurants.SelectedIndex;

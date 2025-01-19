@@ -13,12 +13,12 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
     public partial class FrmPaisos : Form
     {
 
-        private RestaurantsDBEntities restaurantContext { get; set; }
+        private RestaurantsDBEntitiesIker1 restaurantContext { get; set; }
         Boolean bFirst = true;
 
         FrmADMPais frmADMPais = null;
 
-        public FrmPaisos(RestaurantsDBEntities xres)
+        public FrmPaisos(RestaurantsDBEntitiesIker1 xres)
         {
             InitializeComponent();
             restaurantContext = xres;

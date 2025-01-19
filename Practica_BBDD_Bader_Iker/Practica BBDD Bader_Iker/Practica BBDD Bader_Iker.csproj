@@ -116,14 +116,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDRestaurantsIker.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDRestaurantsIker.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BDRestaurantsIker.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BDRestaurantsIker.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDRestaurantsIker.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Categories.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Ciutats.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Continents.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="FORMULARIS\FrmADMCiutat.cs">
       <SubType>Form</SubType>
@@ -198,10 +213,10 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="GaleriaImatges.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Horaris.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -219,7 +234,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Paisos.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -229,13 +244,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Resenyes.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Reserves.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <Compile Include="Restaurants.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuaris.cs">
+      <DependentUpon>BDRestaurantsIker.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FORMULARIS\FrmADMCiutat.resx">
       <DependentUpon>FrmADMCiutat.cs</DependentUpon>
@@ -281,6 +299,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="BDRestaurantsIker.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BDRestaurantsIker.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BDRestaurantsIker.edmx.diagram">
+      <DependentUpon>BDRestaurantsIker.edmx</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -319,6 +344,16 @@
     <None Include="Resources\1486071980-1_79325.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BDRestaurantsIker.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BDRestaurantsIker.edmx</DependentUpon>
+      <LastGenOutput>BDRestaurantsIker.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BDRestaurantsIker.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BDRestaurantsIker.edmx</DependentUpon>
+      <LastGenOutput>BDRestaurantsIker.cs</LastGenOutput>
+    </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
