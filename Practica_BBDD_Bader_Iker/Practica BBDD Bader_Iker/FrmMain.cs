@@ -22,6 +22,7 @@ namespace Practica_BBDD_Bader_Iker
         FrmCategories frmCategories = null;
         FrmGestioGaleria frmGestioGaleria = null;
         FrmGaleria frmGaleria = null;
+        FrmDadesRestaurant frmDadesRestaurant = null;
 
         public FrmMain()
         {
@@ -173,6 +174,20 @@ namespace Practica_BBDD_Bader_Iker
                 frmGaleria.Show();
             }
             frmGaleria.Activate();
+        }
+
+        private void restaurantsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            String xnom = "Dades Restaurant";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmDadesRestaurant = new FrmDadesRestaurant();
+                frmDadesRestaurant.Name = xnom;
+                frmDadesRestaurant.MdiParent = this;
+                frmDadesRestaurant.Show();
+            }
+            frmDadesRestaurant.Activate();
         }
     }
 }

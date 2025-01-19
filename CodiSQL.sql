@@ -64,7 +64,7 @@ CREATE TABLE Horaris (
 );
 
 CREATE TABLE GaleriaImatges (
-    nomImatge NVARCHAR(60),
+    imatge NVARCHAR(MAX),
     idImatge INT PRIMARY KEY,
     idRestaurant INT,
     FOREIGN KEY (idRestaurant) REFERENCES Restaurants(idRestaurant)

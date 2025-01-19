@@ -75,14 +75,14 @@
             // galeriaToolStripMenuItem1
             // 
             this.galeriaToolStripMenuItem1.Name = "galeriaToolStripMenuItem1";
-            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.galeriaToolStripMenuItem1.Text = "Veure Galeria";
             this.galeriaToolStripMenuItem1.Click += new System.EventHandler(this.galeriaToolStripMenuItem1_Click);
             // 
             // localsToolStripMenuItem
             // 
             this.localsToolStripMenuItem.Name = "localsToolStripMenuItem";
-            this.localsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.localsToolStripMenuItem.Text = "Locals";
             // 
             // llocsToolStripMenuItem
@@ -133,13 +133,14 @@
             // restaurantsToolStripMenuItem1
             // 
             this.restaurantsToolStripMenuItem1.Name = "restaurantsToolStripMenuItem1";
-            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
+            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.restaurantsToolStripMenuItem1.Text = "Restaurants";
+            this.restaurantsToolStripMenuItem1.Click += new System.EventHandler(this.restaurantsToolStripMenuItem1_Click);
             // 
             // categoriesToolStripMenuItem
             // 
             this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
-            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.categoriesToolStripMenuItem.Text = "Categories";
             this.categoriesToolStripMenuItem.Click += new System.EventHandler(this.categoriesToolStripMenuItem_Click);
             // 
