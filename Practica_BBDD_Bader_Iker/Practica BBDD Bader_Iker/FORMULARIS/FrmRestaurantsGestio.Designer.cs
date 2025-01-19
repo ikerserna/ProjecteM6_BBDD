@@ -31,8 +31,7 @@
             this.dgRestaurants = new System.Windows.Forms.DataGridView();
             this.lbLlistaRes = new System.Windows.Forms.Label();
             this.gbAfegir = new System.Windows.Forms.GroupBox();
-            this.lbImatge = new System.Windows.Forms.Label();
-            this.btFitxer = new System.Windows.Forms.Button();
+            this.btMod = new System.Windows.Forms.Button();
             this.lbLinkWeb = new System.Windows.Forms.Label();
             this.tbLinkWeb = new System.Windows.Forms.TextBox();
             this.lbLinkMaps = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.btBorrar = new System.Windows.Forms.Button();
             this.btAfegir = new System.Windows.Forms.Button();
             this.lbTelefon = new System.Windows.Forms.Label();
-            this.cbCiutats = new System.Windows.Forms.ComboBox();
             this.lbCiutat = new System.Windows.Forms.Label();
             this.tbTelefon = new System.Windows.Forms.TextBox();
             this.tbNom = new System.Windows.Forms.TextBox();
@@ -53,7 +51,7 @@
             this.lbCodiPostal = new System.Windows.Forms.Label();
             this.pbEliminar = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btMod = new System.Windows.Forms.Button();
+            this.cbCiutats = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgRestaurants)).BeginInit();
             this.gbAfegir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEliminar)).BeginInit();
@@ -67,7 +65,7 @@
             this.dgRestaurants.Name = "dgRestaurants";
             this.dgRestaurants.ReadOnly = true;
             this.dgRestaurants.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgRestaurants.Size = new System.Drawing.Size(458, 454);
+            this.dgRestaurants.Size = new System.Drawing.Size(458, 402);
             this.dgRestaurants.TabIndex = 1;
             // 
             // lbLlistaRes
@@ -83,8 +81,6 @@
             // gbAfegir
             // 
             this.gbAfegir.Controls.Add(this.btMod);
-            this.gbAfegir.Controls.Add(this.lbImatge);
-            this.gbAfegir.Controls.Add(this.btFitxer);
             this.gbAfegir.Controls.Add(this.lbLinkWeb);
             this.gbAfegir.Controls.Add(this.tbLinkWeb);
             this.gbAfegir.Controls.Add(this.lbLinkMaps);
@@ -104,33 +100,23 @@
             this.gbAfegir.Controls.Add(this.lbAdresa);
             this.gbAfegir.Controls.Add(this.lbCodiPostal);
             this.gbAfegir.Font = new System.Drawing.Font("Verdana", 12F);
-            this.gbAfegir.Location = new System.Drawing.Point(1, 12);
+            this.gbAfegir.Location = new System.Drawing.Point(3, 12);
             this.gbAfegir.Name = "gbAfegir";
-            this.gbAfegir.Size = new System.Drawing.Size(472, 488);
+            this.gbAfegir.Size = new System.Drawing.Size(470, 436);
             this.gbAfegir.TabIndex = 21;
             this.gbAfegir.TabStop = false;
             this.gbAfegir.Text = "Afegir/Modificar Restaurant";
             // 
-            // lbImatge
+            // btMod
             // 
-            this.lbImatge.AutoSize = true;
-            this.lbImatge.Font = new System.Drawing.Font("Verdana", 15F);
-            this.lbImatge.Location = new System.Drawing.Point(9, 356);
-            this.lbImatge.Name = "lbImatge";
-            this.lbImatge.Size = new System.Drawing.Size(108, 25);
-            this.lbImatge.TabIndex = 26;
-            this.lbImatge.Text = "Miniatura";
-            // 
-            // btFitxer
-            // 
-            this.btFitxer.Font = new System.Drawing.Font("Verdana", 15F);
-            this.btFitxer.Location = new System.Drawing.Point(134, 350);
-            this.btFitxer.Name = "btFitxer";
-            this.btFitxer.Size = new System.Drawing.Size(312, 36);
-            this.btFitxer.TabIndex = 25;
-            this.btFitxer.Text = "Obrir un fitxer";
-            this.btFitxer.UseVisualStyleBackColor = true;
-            this.btFitxer.Click += new System.EventHandler(this.btFitxer_Click);
+            this.btMod.Font = new System.Drawing.Font("Verdana", 15F);
+            this.btMod.Location = new System.Drawing.Point(162, 352);
+            this.btMod.Name = "btMod";
+            this.btMod.Size = new System.Drawing.Size(142, 78);
+            this.btMod.TabIndex = 27;
+            this.btMod.Text = "Modificar";
+            this.btMod.UseVisualStyleBackColor = true;
+            this.btMod.Click += new System.EventHandler(this.btMod_Click);
             // 
             // lbLinkWeb
             // 
@@ -171,7 +157,7 @@
             // btBorrar
             // 
             this.btBorrar.Font = new System.Drawing.Font("Verdana", 15F);
-            this.btBorrar.Location = new System.Drawing.Point(310, 404);
+            this.btBorrar.Location = new System.Drawing.Point(310, 352);
             this.btBorrar.Name = "btBorrar";
             this.btBorrar.Size = new System.Drawing.Size(156, 78);
             this.btBorrar.TabIndex = 20;
@@ -182,7 +168,7 @@
             // btAfegir
             // 
             this.btAfegir.Font = new System.Drawing.Font("Verdana", 15F);
-            this.btAfegir.Location = new System.Drawing.Point(6, 404);
+            this.btAfegir.Location = new System.Drawing.Point(6, 352);
             this.btAfegir.Name = "btAfegir";
             this.btAfegir.Size = new System.Drawing.Size(150, 78);
             this.btAfegir.TabIndex = 19;
@@ -199,15 +185,6 @@
             this.lbTelefon.Size = new System.Drawing.Size(84, 25);
             this.lbTelefon.TabIndex = 18;
             this.lbTelefon.Text = "Telèfon";
-            // 
-            // cbCiutats
-            // 
-            this.cbCiutats.Font = new System.Drawing.Font("Verdana", 15F);
-            this.cbCiutats.FormattingEnabled = true;
-            this.cbCiutats.Location = new System.Drawing.Point(134, 78);
-            this.cbCiutats.Name = "cbCiutats";
-            this.cbCiutats.Size = new System.Drawing.Size(312, 33);
-            this.cbCiutats.TabIndex = 4;
             // 
             // lbCiutat
             // 
@@ -302,7 +279,7 @@
             // pbEliminar
             // 
             this.pbEliminar.Image = global::Practica_BBDD_Bader_Iker.Properties.Resources.icons8_delete_100;
-            this.pbEliminar.Location = new System.Drawing.Point(955, 400);
+            this.pbEliminar.Location = new System.Drawing.Point(955, 348);
             this.pbEliminar.Name = "pbEliminar";
             this.pbEliminar.Size = new System.Drawing.Size(100, 100);
             this.pbEliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -314,22 +291,20 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // btMod
+            // cbCiutats
             // 
-            this.btMod.Font = new System.Drawing.Font("Verdana", 15F);
-            this.btMod.Location = new System.Drawing.Point(162, 404);
-            this.btMod.Name = "btMod";
-            this.btMod.Size = new System.Drawing.Size(142, 78);
-            this.btMod.TabIndex = 27;
-            this.btMod.Text = "Modificar";
-            this.btMod.UseVisualStyleBackColor = true;
-            this.btMod.Click += new System.EventHandler(this.btMod_Click);
+            this.cbCiutats.Font = new System.Drawing.Font("Verdana", 15F);
+            this.cbCiutats.FormattingEnabled = true;
+            this.cbCiutats.Location = new System.Drawing.Point(134, 78);
+            this.cbCiutats.Name = "cbCiutats";
+            this.cbCiutats.Size = new System.Drawing.Size(312, 33);
+            this.cbCiutats.TabIndex = 4;
             // 
             // FrmRestaurantsGestio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 512);
+            this.ClientSize = new System.Drawing.Size(1067, 458);
             this.Controls.Add(this.pbEliminar);
             this.Controls.Add(this.gbAfegir);
             this.Controls.Add(this.lbLlistaRes);
@@ -353,7 +328,6 @@
         private System.Windows.Forms.Button btBorrar;
         private System.Windows.Forms.Button btAfegir;
         private System.Windows.Forms.Label lbTelefon;
-        private System.Windows.Forms.ComboBox cbCiutats;
         private System.Windows.Forms.Label lbCiutat;
         private System.Windows.Forms.TextBox tbTelefon;
         private System.Windows.Forms.TextBox tbNom;
@@ -370,8 +344,7 @@
         private System.Windows.Forms.TextBox tbLinkWeb;
         private System.Windows.Forms.Label lbLinkMaps;
         private System.Windows.Forms.TextBox tbLinkMaps;
-        private System.Windows.Forms.Label lbImatge;
-        private System.Windows.Forms.Button btFitxer;
         private System.Windows.Forms.Button btMod;
+        private System.Windows.Forms.ComboBox cbCiutats;
     }
 }

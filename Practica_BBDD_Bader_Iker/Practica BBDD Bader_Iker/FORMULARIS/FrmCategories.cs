@@ -108,21 +108,17 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         {
             try
             {
-                // Obtener la fila seleccionada en el DataGridView
                 if (dgRestCat.SelectedRows.Count > 0)
                 {
-                    // Obtener el id del restaurante y el id de la categoría desde las celdas seleccionadas
                     int idRestaurant = Convert.ToInt32(dgRestCat.SelectedRows[0].Cells["idRestaurant"].Value);
                     int idCategoria = Convert.ToInt32(dgRestCat.SelectedRows[0].Cells["idCategoria"].Value);
 
-                    // Buscar el restaurante y la categoría en la base de datos
                     var restaurante = restaurantContext.Restaurants
                         .Include(r => r.Categories)
                         .FirstOrDefault(r => r.idRestaurant == idRestaurant);
                     var categoria = restaurantContext.Categories
                         .FirstOrDefault(c => c.idCategoria == idCategoria);
 
-                    // Verificar si la relación existe y eliminarla
                     if (restaurante != null && categoria != null && restaurante.Categories.Contains(categoria))
                     {
                         restaurante.Categories.Remove(categoria);

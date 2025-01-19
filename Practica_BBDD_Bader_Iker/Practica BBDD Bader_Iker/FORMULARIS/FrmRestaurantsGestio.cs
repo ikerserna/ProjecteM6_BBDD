@@ -26,6 +26,20 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         {
             getDades();
             gridInit();
+            omplirComboCiutats();
+        }
+
+        private void omplirComboCiutats()
+        {
+            var qryCiutats = from c in restaurantContext.Ciutats
+                            orderby c.NomCiutat
+                            select c;
+
+
+            cbCiutats.DataSource = qryCiutats.ToList();
+            cbCiutats.DisplayMember = "NomCiutat";
+            cbCiutats.ValueMember = "NomCiutat";
+            cbCiutats.SelectedIndex = 0;
         }
 
         private void gridInit()
@@ -52,7 +66,23 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 
         private void btAfegir_Click(object sender, EventArgs e)
         {
+            Restaurants r = new Restaurants();
 
+            r.Nom = tbNom.Text;
+            r.NomCiutat = cbCiutats.SelectedValue.ToString();
+            r.Adresa = tbAdresa.Text;
+            r.CodiPostal = tbCodiPostal.Text;
+            r.eMail = tbEmail.Text;
+            r.TelefonContacte = tbEmail.Text;
+            r.LinkWeb = tbLinkWeb.Text;
+            r.GoogleMapsLink = tbLinkMaps.Text;
+
+            if (vDades())
+            {                
+                restaurantContext.Restaurants.Add(r);
+                ferCanvis();   
+                getDades();    
+            }
         }
 
         private void btBorrar_Click(object sender, EventArgs e)
@@ -94,6 +124,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             }
             return xb;
         }
+
         private Boolean ferCanvis()
         {
             Boolean xb = false;
