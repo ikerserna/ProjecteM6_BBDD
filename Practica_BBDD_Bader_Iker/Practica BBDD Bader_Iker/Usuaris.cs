@@ -17,7 +17,6 @@ namespace Practica_BBDD_Bader_Iker
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Usuaris()
         {
-            this.Resenyes = new HashSet<Resenyes>();
             this.Reserves = new HashSet<Reserves>();
         }
     
@@ -27,8 +26,6 @@ namespace Practica_BBDD_Bader_Iker
         public string Telefon { get; set; }
         public string Contrassenya { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Resenyes> Resenyes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reserves> Reserves { get; set; }
     }

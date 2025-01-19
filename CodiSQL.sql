@@ -80,10 +80,11 @@ CREATE TABLE Usuaris (
 
 CREATE TABLE Resenyes (
     idResenya INT IDENTITY(1,1) PRIMARY KEY,
-    resenya NVARCHAR(2000),
+    descripcio NVARCHAR(2000),
     valoracio INT CHECK (valoracio BETWEEN 1 AND 5),
-    idUsuari INT,
-    FOREIGN KEY (idUsuari) REFERENCES Usuaris(idUsuari)
+	nomUsuari NVARCHAR(20),
+    idRestaurant INT,
+    FOREIGN KEY (idRestaurant) REFERENCES Restaurants(idRestaurant)
 );
 
 CREATE TABLE Reserves (

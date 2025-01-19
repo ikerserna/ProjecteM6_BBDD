@@ -50,9 +50,10 @@
       <PropertyRef Name="idResenya" />
     </Key>
     <Property Name="idResenya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="resenya" Type="nvarchar" MaxLength="2000" />
+    <Property Name="descripcio" Type="nvarchar" MaxLength="2000" />
     <Property Name="valoracio" Type="int" />
-    <Property Name="idUsuari" Type="int" />
+    <Property Name="nomUsuari" Type="nvarchar" MaxLength="20" />
+    <Property Name="idRestaurant" Type="int" />
   </EntityType>
   <EntityType Name="Reserves">
     <Key>
@@ -148,15 +149,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Resenyes__idUsua__534D60F1">
-    <End Role="Usuaris" Type="Self.Usuaris" Multiplicity="0..1" />
+  <Association Name="FK__Resenyes__idRest__03F0984C">
+    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1" />
     <End Role="Resenyes" Type="Self.Resenyes" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Usuaris">
-        <PropertyRef Name="idUsuari" />
+      <Principal Role="Restaurants">
+        <PropertyRef Name="idRestaurant" />
       </Principal>
       <Dependent Role="Resenyes">
-        <PropertyRef Name="idUsuari" />
+        <PropertyRef Name="idRestaurant" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -248,8 +249,8 @@
       <End Role="Continents" EntitySet="Continents" />
       <End Role="Paisos" EntitySet="Paisos" />
     </AssociationSet>
-    <AssociationSet Name="FK__Resenyes__idUsua__534D60F1" Association="Self.FK__Resenyes__idUsua__534D60F1">
-      <End Role="Usuaris" EntitySet="Usuaris" />
+    <AssociationSet Name="FK__Resenyes__idRest__03F0984C" Association="Self.FK__Resenyes__idRest__03F0984C">
+      <End Role="Restaurants" EntitySet="Restaurants" />
       <End Role="Resenyes" EntitySet="Resenyes" />
     </AssociationSet>
     <AssociationSet Name="FK__Reserves__idRest__5812160E" Association="Self.FK__Reserves__idRest__5812160E">

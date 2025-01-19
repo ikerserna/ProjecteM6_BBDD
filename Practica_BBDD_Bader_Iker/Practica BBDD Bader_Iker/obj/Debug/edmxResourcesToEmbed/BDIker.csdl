@@ -58,10 +58,11 @@
       <PropertyRef Name="idResenya" />
     </Key>
     <Property Name="idResenya" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="resenya" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="descripcio" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
     <Property Name="valoracio" Type="Int32" />
-    <Property Name="idUsuari" Type="Int32" />
-    <NavigationProperty Name="Usuaris" Relationship="Self.FK__Resenyes__idUsua__534D60F1" FromRole="Resenyes" ToRole="Usuaris" />
+    <Property Name="nomUsuari" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="idRestaurant" Type="Int32" />
+    <NavigationProperty Name="Restaurants" Relationship="Self.FK__Resenyes__idRest__03F0984C" FromRole="Resenyes" ToRole="Restaurants" />
   </EntityType>
   <EntityType Name="Reserves">
     <Key>
@@ -95,6 +96,7 @@
     <NavigationProperty Name="Ciutats" Relationship="Self.FK__Restauran__NomCi__3F466844" FromRole="Restaurants" ToRole="Ciutats" />
     <NavigationProperty Name="GaleriaImatges" Relationship="Self.FK__GaleriaIm__idRes__6FE99F9F" FromRole="Restaurants" ToRole="GaleriaImatges" />
     <NavigationProperty Name="Horaris" Relationship="Self.FK__Horaris__idResta__48CFD27E" FromRole="Restaurants" ToRole="Horaris" />
+    <NavigationProperty Name="Resenyes" Relationship="Self.FK__Resenyes__idRest__03F0984C" FromRole="Restaurants" ToRole="Resenyes" />
     <NavigationProperty Name="Reserves" Relationship="Self.FK__Reserves__idRest__5812160E" FromRole="Restaurants" ToRole="Reserves" />
     <NavigationProperty Name="Categories" Relationship="Self.RestaurantCategories" FromRole="Restaurants" ToRole="Categories" />
   </EntityType>
@@ -107,7 +109,6 @@
     <Property Name="Correu" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
     <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="Contrassenya" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Resenyes" Relationship="Self.FK__Resenyes__idUsua__534D60F1" FromRole="Usuaris" ToRole="Resenyes" />
     <NavigationProperty Name="Reserves" Relationship="Self.FK__Reserves__idUsua__59063A47" FromRole="Usuaris" ToRole="Reserves" />
   </EntityType>
   <Association Name="FK__Ciutats__NomPais__3C69FB99">
@@ -170,15 +171,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Resenyes__idUsua__534D60F1">
-    <End Role="Usuaris" Type="Self.Usuaris" Multiplicity="0..1" />
+  <Association Name="FK__Resenyes__idRest__03F0984C">
+    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1" />
     <End Role="Resenyes" Type="Self.Resenyes" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Usuaris">
-        <PropertyRef Name="idUsuari" />
+      <Principal Role="Restaurants">
+        <PropertyRef Name="idRestaurant" />
       </Principal>
       <Dependent Role="Resenyes">
-        <PropertyRef Name="idUsuari" />
+        <PropertyRef Name="idRestaurant" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -210,7 +211,7 @@
     <End Role="Categories" Type="Self.Categories" Multiplicity="*" />
     <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="RestaurantsDBEntities10" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="RestaurantsDBEntitiesIker" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Categories" EntityType="Self.Categories" />
     <EntitySet Name="Ciutats" EntityType="Self.Ciutats" />
     <EntitySet Name="Continents" EntityType="Self.Continents" />
@@ -241,8 +242,8 @@
       <End Role="Restaurants" EntitySet="Restaurants" />
       <End Role="Horaris" EntitySet="Horaris" />
     </AssociationSet>
-    <AssociationSet Name="FK__Resenyes__idUsua__534D60F1" Association="Self.FK__Resenyes__idUsua__534D60F1">
-      <End Role="Usuaris" EntitySet="Usuaris" />
+    <AssociationSet Name="FK__Resenyes__idRest__03F0984C" Association="Self.FK__Resenyes__idRest__03F0984C">
+      <End Role="Restaurants" EntitySet="Restaurants" />
       <End Role="Resenyes" EntitySet="Resenyes" />
     </AssociationSet>
     <AssociationSet Name="FK__Reserves__idRest__5812160E" Association="Self.FK__Reserves__idRest__5812160E">

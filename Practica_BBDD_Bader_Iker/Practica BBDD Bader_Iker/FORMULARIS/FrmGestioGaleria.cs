@@ -7,11 +7,11 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
     public partial class FrmGestioGaleria : Form
     {
-        private RestaurantsDBEntities10 restaurantContext { get; set; } = new RestaurantsDBEntities10();
+        private RestaurantsDBEntitiesIker restaurantContext { get; set; } = new RestaurantsDBEntitiesIker();
         FrmAGestioGaleria frmADMGestioGaleria = null;
         int restaurantId;
 
-        public FrmGestioGaleria(RestaurantsDBEntities10 restaurantContext)
+        public FrmGestioGaleria(RestaurantsDBEntitiesIker restaurantContext)
         {
             InitializeComponent();
             this.restaurantContext = restaurantContext;

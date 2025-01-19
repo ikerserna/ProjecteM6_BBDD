@@ -4,23 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fab88319757f4fc789df16e2bdd144d5" Name="Diagram1">
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Categories" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Ciutats" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Continents" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.GaleriaImatges" Width="1.5" PointX="9.75" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Horaris" Width="1.5" PointX="9.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Paisos" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Resenyes" Width="1.5" PointX="12.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Reserves" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel1.Restaurants" Width="1.5" PointX="7.5" PointY="4.75" IsExpanded="true" />
+      <Diagram DiagramId="78688383a8544d8ba76d2bfac26e8f52" Name="Diagram1">
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Categories" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Ciutats" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Continents" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.GaleriaImatges" Width="1.5" PointX="9.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Horaris" Width="1.5" PointX="9.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Paisos" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Resenyes" Width="1.5" PointX="9.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Reserves" Width="1.5" PointX="12.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel1.Restaurants" Width="1.5" PointX="7.5" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="RestaurantsDBModel1.Usuaris" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__Ciutats__NomPais__3C69FB99" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__Restauran__NomCi__3F466844" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__Paisos__NomConti__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__GaleriaIm__idRes__6FE99F9F" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__Horaris__idResta__48CFD27E" ManuallyRouted="false" />
-        <AssociationConnector Association="RestaurantsDBModel1.FK__Resenyes__idUsua__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel1.FK__Resenyes__idRest__03F0984C" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__Reserves__idRest__5812160E" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.FK__Reserves__idUsua__59063A47" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel1.RestaurantCategories" ManuallyRouted="false" />

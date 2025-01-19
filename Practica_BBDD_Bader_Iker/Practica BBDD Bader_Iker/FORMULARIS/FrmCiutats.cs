@@ -12,12 +12,12 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
     public partial class FrmCiutats : Form
     {
-        private RestaurantsDBEntities10 restaurantContext { get; set; }
+        private RestaurantsDBEntitiesIker restaurantContext { get; set; }
         Boolean bFirst = true;
 
         FrmADMCiutat frmADMCiutat = null;
 
-        public FrmCiutats(RestaurantsDBEntities10 xres)
+        public FrmCiutats(RestaurantsDBEntitiesIker xres)
         {
             InitializeComponent();
             restaurantContext = xres;

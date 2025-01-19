@@ -14,7 +14,7 @@ namespace Practica_BBDD_Bader_Iker
     public partial class FrmMain : Form
     {
 
-        private RestaurantsDBEntities10 restaurantContext { get; set; } = new RestaurantsDBEntities10();
+        private RestaurantsDBEntitiesIker restaurantContext { get; set; } = new RestaurantsDBEntitiesIker();
         
 
         FrmPaisos frmPaisos = null;
@@ -23,6 +23,7 @@ namespace Practica_BBDD_Bader_Iker
         FrmGestioGaleria frmGestioGaleria = null;
         FrmGaleria frmGaleria = null;
         FrmDadesRestaurant frmDadesRestaurant = null;
+        FrmValoracio frmValoracio = null;
 
         public FrmMain()
         {
@@ -188,6 +189,20 @@ namespace Practica_BBDD_Bader_Iker
                 frmDadesRestaurant.Show();
             }
             frmDadesRestaurant.Activate();
+        }
+
+        private void valoracioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String xnom = "Valoracions";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmValoracio = new FrmValoracio(restaurantContext);
+                frmValoracio.Name = xnom;
+                frmValoracio.MdiParent = this;
+                frmValoracio.Show();
+            }
+            frmValoracio.Activate();
         }
     }
 }

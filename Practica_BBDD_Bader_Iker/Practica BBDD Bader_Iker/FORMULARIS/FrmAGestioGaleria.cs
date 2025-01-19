@@ -9,11 +9,11 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
     public partial class FrmAGestioGaleria : Form
     {
-        private RestaurantsDBEntities10 restaurantContext { get; set; }
+        private RestaurantsDBEntitiesIker restaurantContext { get; set; }
         private string rutaImagen;
         public int idRestauranteSeleccionado;
 
-        public FrmAGestioGaleria(RestaurantsDBEntities10 xres, int idRestaurante)
+        public FrmAGestioGaleria(RestaurantsDBEntitiesIker xres, int idRestaurante)
         {
             InitializeComponent();
             restaurantContext = xres;

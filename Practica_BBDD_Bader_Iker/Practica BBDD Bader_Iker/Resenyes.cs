@@ -15,10 +15,11 @@ namespace Practica_BBDD_Bader_Iker
     public partial class Resenyes
     {
         public int idResenya { get; set; }
-        public string resenya { get; set; }
+        public string descripcio { get; set; }
         public Nullable<int> valoracio { get; set; }
-        public Nullable<int> idUsuari { get; set; }
+        public string nomUsuari { get; set; }
+        public Nullable<int> idRestaurant { get; set; }
     
-        public virtual Usuaris Usuaris { get; set; }
+        public virtual Restaurants Restaurants { get; set; }
     }
 }

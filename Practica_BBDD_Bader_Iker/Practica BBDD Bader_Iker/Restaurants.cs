@@ -19,6 +19,7 @@ namespace Practica_BBDD_Bader_Iker
         {
             this.GaleriaImatges = new HashSet<GaleriaImatges>();
             this.Horaris = new HashSet<Horaris>();
+            this.Resenyes = new HashSet<Resenyes>();
             this.Reserves = new HashSet<Reserves>();
             this.Categories = new HashSet<Categories>();
         }
@@ -41,6 +42,8 @@ namespace Practica_BBDD_Bader_Iker
         public virtual ICollection<GaleriaImatges> GaleriaImatges { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Horaris> Horaris { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Resenyes> Resenyes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reserves> Reserves { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

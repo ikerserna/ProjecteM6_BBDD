@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="RestaurantsDBModel1StoreContainer" CdmEntityContainer="RestaurantsDBEntities10">
+  <EntityContainerMapping StorageEntityContainer="RestaurantsDBModel1StoreContainer" CdmEntityContainer="RestaurantsDBEntitiesIker">
     <EntitySetMapping Name="Categories">
       <EntityTypeMapping TypeName="RestaurantsDBModel1.Categories">
         <MappingFragment StoreEntitySet="Categories">
@@ -56,9 +56,10 @@
       <EntityTypeMapping TypeName="RestaurantsDBModel1.Resenyes">
         <MappingFragment StoreEntitySet="Resenyes">
           <ScalarProperty Name="idResenya" ColumnName="idResenya" />
-          <ScalarProperty Name="resenya" ColumnName="resenya" />
+          <ScalarProperty Name="descripcio" ColumnName="descripcio" />
           <ScalarProperty Name="valoracio" ColumnName="valoracio" />
-          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
+          <ScalarProperty Name="nomUsuari" ColumnName="nomUsuari" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

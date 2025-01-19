@@ -85,3 +85,4 @@ D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker
 D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\Microsoft.Web.WebView2.Core.xml
 D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
 D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\DAM2\M6\UF2\ProjecteM6_BBDD\Practica_BBDD_Bader_Iker\Practica BBDD Bader_Iker\obj\Debug\Practica_BBDD_Bader_Iker.FORMULARIS.FrmValoracio.resources
