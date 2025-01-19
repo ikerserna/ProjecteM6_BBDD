@@ -41,8 +41,6 @@
             this.restaurantsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.galeriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.miniaturaWikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.googleMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.valoracioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tancarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verificarConexióToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,14 +73,14 @@
             // galeriaToolStripMenuItem1
             // 
             this.galeriaToolStripMenuItem1.Name = "galeriaToolStripMenuItem1";
-            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.galeriaToolStripMenuItem1.Text = "Veure Galeria";
             this.galeriaToolStripMenuItem1.Click += new System.EventHandler(this.galeriaToolStripMenuItem1_Click);
             // 
             // localsToolStripMenuItem
             // 
             this.localsToolStripMenuItem.Name = "localsToolStripMenuItem";
-            this.localsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.localsToolStripMenuItem.Text = "Locals";
             // 
             // llocsToolStripMenuItem
@@ -97,14 +95,14 @@
             // ciutatsToolStripMenuItem
             // 
             this.ciutatsToolStripMenuItem.Name = "ciutatsToolStripMenuItem";
-            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.ciutatsToolStripMenuItem.Text = "Ciutats";
             this.ciutatsToolStripMenuItem.Click += new System.EventHandler(this.ciutatsToolStripMenuItem_Click);
             // 
             // paisosToolStripMenuItem
             // 
             this.paisosToolStripMenuItem.Name = "paisosToolStripMenuItem";
-            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.paisosToolStripMenuItem.Text = "Paisos";
             this.paisosToolStripMenuItem.Click += new System.EventHandler(this.paisosToolStripMenuItem_Click);
             // 
@@ -113,8 +111,6 @@
             this.gestioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dadesToolStripMenuItem,
             this.galeriaToolStripMenuItem,
-            this.miniaturaWikiToolStripMenuItem,
-            this.googleMapsToolStripMenuItem,
             this.valoracioToolStripMenuItem});
             this.gestioToolStripMenuItem.Name = "gestioToolStripMenuItem";
             this.gestioToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
@@ -133,14 +129,14 @@
             // restaurantsToolStripMenuItem1
             // 
             this.restaurantsToolStripMenuItem1.Name = "restaurantsToolStripMenuItem1";
-            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
+            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.restaurantsToolStripMenuItem1.Text = "Restaurants";
             this.restaurantsToolStripMenuItem1.Click += new System.EventHandler(this.restaurantsToolStripMenuItem1_Click);
             // 
             // categoriesToolStripMenuItem
             // 
             this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
-            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.categoriesToolStripMenuItem.Text = "Categories";
             this.categoriesToolStripMenuItem.Click += new System.EventHandler(this.categoriesToolStripMenuItem_Click);
             // 
@@ -150,18 +146,6 @@
             this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.galeriaToolStripMenuItem.Text = "Galeria";
             this.galeriaToolStripMenuItem.Click += new System.EventHandler(this.galeriaToolStripMenuItem_Click);
-            // 
-            // miniaturaWikiToolStripMenuItem
-            // 
-            this.miniaturaWikiToolStripMenuItem.Name = "miniaturaWikiToolStripMenuItem";
-            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.miniaturaWikiToolStripMenuItem.Text = "Miniatures Wiki";
-            // 
-            // googleMapsToolStripMenuItem
-            // 
-            this.googleMapsToolStripMenuItem.Name = "googleMapsToolStripMenuItem";
-            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.googleMapsToolStripMenuItem.Text = "Google Maps";
             // 
             // valoracioToolStripMenuItem
             // 
@@ -215,8 +199,6 @@
         private System.Windows.Forms.ToolStripMenuItem gestioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem galeriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem miniaturaWikiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem googleMapsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem valoracioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restaurantsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem galeriaToolStripMenuItem1;

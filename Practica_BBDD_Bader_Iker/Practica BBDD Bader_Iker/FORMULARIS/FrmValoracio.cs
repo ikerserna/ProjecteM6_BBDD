@@ -14,17 +14,50 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
     public partial class FrmValoracio : Form
     {
         private RestaurantsDBEntitiesIker restaurantContext;
+        private Resenyes resenyaActual;
         int valoracioActual;
+        Boolean modificar;
 
-        public FrmValoracio(RestaurantsDBEntitiesIker restaurantContext)
+        public FrmValoracio(RestaurantsDBEntitiesIker restaurantContext, bool modificar, Resenyes resenya = null)
         {
             InitializeComponent();
             this.restaurantContext = restaurantContext;
+            this.modificar = modificar;
+            this.resenyaActual = resenyaActual;
         }
 
         private void FrmValoracio_Load(object sender, EventArgs e)
         {
             omplirComboRestaurants();
+            if (modificar)
+            {
+                omplirDadesFormulari();
+            }
+        }
+
+        private void omplirDadesFormulari()
+        {
+            if (resenyaActual != null)
+            {
+                tbUsuari.Text = resenyaActual.nomUsuari;
+                tbResenya.Text = resenyaActual.descripcio;
+                valoracioActual = resenyaActual.valoracio;
+
+                cbRestaurants.SelectedValue = resenyaActual.idRestaurant;
+
+                for (int i = 1; i <= 5; i++)
+                {
+                    PictureBox star = this.Controls.Find("pbEstrella" + i, true).FirstOrDefault() as PictureBox;
+                    if (star != null)
+                    {
+                        star.Image = i <= valoracioActual ? Properties.Resources.estrellaLlena : Properties.Resources.estrellaVacia;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No s'ha trobat la ressenya per modificar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void omplirComboRestaurants()
@@ -49,17 +82,17 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             pbEstrella5.Tag = 5;
 
             PictureBox clickedStar = (PictureBox)sender;
-            int starValue = int.Parse(clickedStar.Tag.ToString());
+            int estrellaValue = int.Parse(clickedStar.Tag.ToString());
 
             for (int i = 1; i <= 5; i++)
             {
                 PictureBox star = this.Controls.Find("pbEstrella" + i, true).FirstOrDefault() as PictureBox;
                 if (star != null)
                 {
-                    star.Image = i <= starValue ? Properties.Resources.estrellaLlena : Properties.Resources.estrellaVacia;
+                    star.Image = i <= estrellaValue ? Properties.Resources.estrellaLlena : Properties.Resources.estrellaVacia;
                 }
             }
-            valoracioActual = starValue;
+            valoracioActual = estrellaValue;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

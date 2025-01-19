@@ -194,10 +194,11 @@ namespace Practica_BBDD_Bader_Iker
         private void valoracioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             String xnom = "Valoracions";
+            Boolean modificar = false;
 
             if (!(ja_esta_obert(xnom)))
             {
-                frmValoracio = new FrmValoracio(restaurantContext);
+                frmValoracio = new FrmValoracio(restaurantContext, modificar);
                 frmValoracio.Name = xnom;
                 frmValoracio.MdiParent = this;
                 frmValoracio.Show();
