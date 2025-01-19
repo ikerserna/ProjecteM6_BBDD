@@ -14,9 +14,9 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
     public partial class FrmCategories : Form
     {
 
-        private RestaurantsDBEntitiesIker restaurantContext { get; set; }
+        private RestaurantsDBEntities restaurantContext { get; set; }
 
-        public FrmCategories(RestaurantsDBEntitiesIker xres)
+        public FrmCategories(RestaurantsDBEntities xres)
         {
             InitializeComponent();
             restaurantContext = xres;
@@ -59,8 +59,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         }
 
         private void pbDel_Click(object sender, EventArgs e)
-        {
-            
+        {            
             Categories c = restaurantContext.Categories.Find(dgCategories.SelectedRows[0].Cells["idCategoria"].Value);
 
             if (c != null)

@@ -16,7 +16,7 @@ namespace Practica_BBDD_Bader_Iker
     public partial class RestaurantsDBEntities : DbContext
     {
         public RestaurantsDBEntities()
-            : base("name=RestaurantsDBEntities10")
+            : base("name=RestaurantsDBEntities")
         {
         }
     
@@ -34,6 +34,5 @@ namespace Practica_BBDD_Bader_Iker
         public virtual DbSet<Resenyes> Resenyes { get; set; }
         public virtual DbSet<Reserves> Reserves { get; set; }
         public virtual DbSet<Restaurants> Restaurants { get; set; }
-        public virtual DbSet<Usuaris> Usuaris { get; set; }
     }
 }

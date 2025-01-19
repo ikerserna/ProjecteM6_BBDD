@@ -49,6 +49,7 @@
             this.dgPaisos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgPaisos.Size = new System.Drawing.Size(489, 371);
             this.dgPaisos.TabIndex = 0;
+            this.dgPaisos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPaisos_CellContentClick);
             // 
             // cbContinents
             // 
@@ -82,6 +83,7 @@
             this.lbContinents.Size = new System.Drawing.Size(112, 23);
             this.lbContinents.TabIndex = 3;
             this.lbContinents.Text = "Continents";
+            this.lbContinents.Click += new System.EventHandler(this.lbContinents_Click);
             // 
             // pbDel
             // 

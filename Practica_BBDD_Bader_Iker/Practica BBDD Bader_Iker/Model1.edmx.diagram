@@ -4,25 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="66ee6e4e90064975a820ecddb86643f6" Name="Diagram1">
-        <EntityTypeShape EntityType="RestaurantsDBModel.Categories" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Ciutats" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Continents" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.GaleriaImatges" Width="1.5" PointX="9.75" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Horaris" Width="1.5" PointX="9.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Paisos" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Resenyes" Width="1.5" PointX="12.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Reserves" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Restaurants" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="RestaurantsDBModel.Usuaris" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="0b267a7f8f3b4001b1cf465236d09e25" Name="Diagram1">
+        <EntityTypeShape EntityType="RestaurantsDBModel.Categories" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Ciutats" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Continents" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.GaleriaImatges" Width="1.5" PointX="9.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Horaris" Width="1.5" PointX="9.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Paisos" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Resenyes" Width="1.5" PointX="9.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Reserves" Width="1.5" PointX="9.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantsDBModel.Restaurants" Width="1.5" PointX="7.5" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="RestaurantsDBModel.FK__Ciutats__NomPais__3C69FB99" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel.FK__Restauran__NomCi__3F466844" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel.FK__Paisos__NomConti__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel.FK__GaleriaIm__idRes__4CA06362" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel.FK__Horaris__idResta__48CFD27E" ManuallyRouted="false" />
-        <AssociationConnector Association="RestaurantsDBModel.FK__Resenyes__idUsua__534D60F1" ManuallyRouted="false" />
-        <AssociationConnector Association="RestaurantsDBModel.FK__Reserves__idRest__5812160E" ManuallyRouted="false" />
-        <AssociationConnector Association="RestaurantsDBModel.FK__Reserves__idUsua__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Resenyes__idRest__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantsDBModel.FK__Reserves__idRest__5535A963" ManuallyRouted="false" />
         <AssociationConnector Association="RestaurantsDBModel.RestaurantCategories" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

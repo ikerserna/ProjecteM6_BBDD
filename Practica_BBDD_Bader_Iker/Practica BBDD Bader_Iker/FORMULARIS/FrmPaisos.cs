@@ -13,12 +13,12 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
     public partial class FrmPaisos : Form
     {
 
-        private RestaurantsDBEntitiesIker restaurantContext { get; set; }
+        private RestaurantsDBEntities restaurantContext { get; set; }
         Boolean bFirst = true;
 
         FrmADMPais frmADMPais = null;
 
-        public FrmPaisos(RestaurantsDBEntitiesIker xres)
+        public FrmPaisos(RestaurantsDBEntities xres)
         {
             InitializeComponent();
             restaurantContext = xres;
@@ -167,6 +167,16 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             {
                 getDades((string)cbContinents.SelectedValue);
             }
+        }
+
+        private void dgPaisos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lbContinents_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

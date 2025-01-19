@@ -27,7 +27,7 @@
     <EntitySetMapping Name="GaleriaImatges">
       <EntityTypeMapping TypeName="RestaurantsDBModel.GaleriaImatges">
         <MappingFragment StoreEntitySet="GaleriaImatges">
-          <ScalarProperty Name="nomImatge" ColumnName="nomImatge" />
+          <ScalarProperty Name="imatge" ColumnName="imatge" />
           <ScalarProperty Name="idImatge" ColumnName="idImatge" />
           <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
         </MappingFragment>
@@ -56,9 +56,10 @@
       <EntityTypeMapping TypeName="RestaurantsDBModel.Resenyes">
         <MappingFragment StoreEntitySet="Resenyes">
           <ScalarProperty Name="idResenya" ColumnName="idResenya" />
-          <ScalarProperty Name="resenya" ColumnName="resenya" />
+          <ScalarProperty Name="descripcio" ColumnName="descripcio" />
           <ScalarProperty Name="valoracio" ColumnName="valoracio" />
-          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
+          <ScalarProperty Name="Usuari" ColumnName="Usuari" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -67,7 +68,7 @@
         <MappingFragment StoreEntitySet="Reserves">
           <ScalarProperty Name="IDReserva" ColumnName="IDReserva" />
           <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
-          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
+          <ScalarProperty Name="Usuari" ColumnName="Usuari" />
           <ScalarProperty Name="DataReserva" ColumnName="DataReserva" />
           <ScalarProperty Name="HoraReserva" ColumnName="HoraReserva" />
           <ScalarProperty Name="NumeroPersones" ColumnName="NumeroPersones" />
@@ -87,18 +88,6 @@
           <ScalarProperty Name="MiniaturaWeb" ColumnName="MiniaturaWeb" />
           <ScalarProperty Name="LinkWeb" ColumnName="LinkWeb" />
           <ScalarProperty Name="GoogleMapsLink" ColumnName="GoogleMapsLink" />
-          <ScalarProperty Name="CuinaEspecialitzada" ColumnName="CuinaEspecialitzada" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Usuaris">
-      <EntityTypeMapping TypeName="RestaurantsDBModel.Usuaris">
-        <MappingFragment StoreEntitySet="Usuaris">
-          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
-          <ScalarProperty Name="NomUsuari" ColumnName="NomUsuari" />
-          <ScalarProperty Name="Correu" ColumnName="Correu" />
-          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
-          <ScalarProperty Name="Contrassenya" ColumnName="Contrassenya" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

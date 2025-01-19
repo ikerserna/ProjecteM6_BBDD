@@ -14,13 +14,13 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
     public partial class FrmADMPais : Form
     {
 
-        private RestaurantsDBEntitiesIker restaurantContext { get; set; }
+        private RestaurantsDBEntities restaurantContext { get; set; }
 
         char op;
         public string pais;
         public string continent;
 
-        public FrmADMPais(RestaurantsDBEntitiesIker xres, char xop)
+        public FrmADMPais(RestaurantsDBEntities xres, char xop)
         {
             InitializeComponent();
             restaurantContext = xres;

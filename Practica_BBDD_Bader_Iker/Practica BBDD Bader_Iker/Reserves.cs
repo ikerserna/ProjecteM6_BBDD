@@ -16,12 +16,11 @@ namespace Practica_BBDD_Bader_Iker
     {
         public int IDReserva { get; set; }
         public Nullable<int> idRestaurant { get; set; }
-        public Nullable<int> idUsuari { get; set; }
+        public string Usuari { get; set; }
         public Nullable<System.DateTime> DataReserva { get; set; }
         public Nullable<System.TimeSpan> HoraReserva { get; set; }
         public Nullable<int> NumeroPersones { get; set; }
     
         public virtual Restaurants Restaurants { get; set; }
-        public virtual Usuaris Usuaris { get; set; }
     }
 }

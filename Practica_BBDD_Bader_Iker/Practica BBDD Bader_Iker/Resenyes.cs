@@ -17,7 +17,7 @@ namespace Practica_BBDD_Bader_Iker
         public int idResenya { get; set; }
         public string descripcio { get; set; }
         public Nullable<int> valoracio { get; set; }
-        public string nomUsuari { get; set; }
+        public string Usuari { get; set; }
         public Nullable<int> idRestaurant { get; set; }
     
         public virtual Restaurants Restaurants { get; set; }
