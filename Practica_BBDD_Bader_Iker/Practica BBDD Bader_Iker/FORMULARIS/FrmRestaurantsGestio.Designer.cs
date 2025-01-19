@@ -39,6 +39,7 @@
             this.btBorrar = new System.Windows.Forms.Button();
             this.btAfegir = new System.Windows.Forms.Button();
             this.lbTelefon = new System.Windows.Forms.Label();
+            this.cbCiutats = new System.Windows.Forms.ComboBox();
             this.lbCiutat = new System.Windows.Forms.Label();
             this.tbTelefon = new System.Windows.Forms.TextBox();
             this.tbNom = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.lbCodiPostal = new System.Windows.Forms.Label();
             this.pbEliminar = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.cbCiutats = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgRestaurants)).BeginInit();
             this.gbAfegir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEliminar)).BeginInit();
@@ -67,6 +67,7 @@
             this.dgRestaurants.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgRestaurants.Size = new System.Drawing.Size(458, 402);
             this.dgRestaurants.TabIndex = 1;
+            this.dgRestaurants.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRestaurants_CellDoubleClick);
             // 
             // lbLlistaRes
             // 
@@ -186,6 +187,15 @@
             this.lbTelefon.TabIndex = 18;
             this.lbTelefon.Text = "Telèfon";
             // 
+            // cbCiutats
+            // 
+            this.cbCiutats.Font = new System.Drawing.Font("Verdana", 15F);
+            this.cbCiutats.FormattingEnabled = true;
+            this.cbCiutats.Location = new System.Drawing.Point(134, 78);
+            this.cbCiutats.Name = "cbCiutats";
+            this.cbCiutats.Size = new System.Drawing.Size(312, 33);
+            this.cbCiutats.TabIndex = 4;
+            // 
             // lbCiutat
             // 
             this.lbCiutat.AutoSize = true;
@@ -290,15 +300,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // cbCiutats
-            // 
-            this.cbCiutats.Font = new System.Drawing.Font("Verdana", 15F);
-            this.cbCiutats.FormattingEnabled = true;
-            this.cbCiutats.Location = new System.Drawing.Point(134, 78);
-            this.cbCiutats.Name = "cbCiutats";
-            this.cbCiutats.Size = new System.Drawing.Size(312, 33);
-            this.cbCiutats.TabIndex = 4;
             // 
             // FrmRestaurantsGestio
             // 

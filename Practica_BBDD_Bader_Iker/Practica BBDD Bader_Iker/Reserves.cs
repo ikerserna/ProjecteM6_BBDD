@@ -22,6 +22,14 @@ namespace Practica_BBDD_Bader_Iker
         public Nullable<int> NumeroPersones { get; set; }
     
         public virtual Restaurants Restaurants { get; set; }
+<<<<<<< Updated upstream
         public virtual Usuaris Usuaris { get; set; }
+=======
+<<<<<<< HEAD
+        public virtual Restaurants Restaurants1 { get; set; }
+=======
+        public virtual Usuaris Usuaris { get; set; }
+>>>>>>> b41456f9ebe54b6889b89bd16b4966743ca6030c
+>>>>>>> Stashed changes
     }
 }

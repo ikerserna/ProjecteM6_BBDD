@@ -90,7 +90,9 @@
     <Property Name="GoogleMapsLink" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <Association Name="FK__Ciutats__NomPais__3C69FB99">
-    <End Role="Paisos" Type="Self.Paisos" Multiplicity="0..1" />
+    <End Role="Paisos" Type="Self.Paisos" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Ciutats" Type="Self.Ciutats" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Paisos">
@@ -102,7 +104,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__GaleriaIm__idRes__4CA06362">
-    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1" />
+    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="GaleriaImatges" Type="Self.GaleriaImatges" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Restaurants">
@@ -114,7 +118,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Horaris__idResta__48CFD27E">
-    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1" />
+    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Horaris" Type="Self.Horaris" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Restaurants">
@@ -126,7 +132,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Paisos__NomConti__398D8EEE">
-    <End Role="Continents" Type="Self.Continents" Multiplicity="0..1" />
+    <End Role="Continents" Type="Self.Continents" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Paisos" Type="Self.Paisos" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Continents">
@@ -138,7 +146,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Resenyes__idRest__5070F446">
-    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1" />
+    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Resenyes" Type="Self.Resenyes" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Restaurants">
@@ -162,7 +172,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Restauran__idCat__44FF419A">
-    <End Role="Categories" Type="Self.Categories" Multiplicity="1" />
+    <End Role="Categories" Type="Self.Categories" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="RestaurantCategories" Type="Self.RestaurantCategories" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Categories">
@@ -186,7 +198,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Restauran__NomCi__3F466844">
-    <End Role="Ciutats" Type="Self.Ciutats" Multiplicity="0..1" />
+    <End Role="Ciutats" Type="Self.Ciutats" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Ciutats">
@@ -194,6 +208,20 @@
       </Principal>
       <Dependent Role="Restaurants">
         <PropertyRef Name="NomCiutat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Horaris_Restaurants">
+    <End Role="Restaurants" Type="Self.Restaurants" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reserves" Type="Self.Reserves" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Restaurants">
+        <PropertyRef Name="idRestaurant" />
+      </Principal>
+      <Dependent Role="Reserves">
+        <PropertyRef Name="idRestaurant" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -243,6 +271,10 @@
     <AssociationSet Name="FK__Restauran__NomCi__3F466844" Association="Self.FK__Restauran__NomCi__3F466844">
       <End Role="Ciutats" EntitySet="Ciutats" />
       <End Role="Restaurants" EntitySet="Restaurants" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Horaris_Restaurants" Association="Self.FK_Horaris_Restaurants">
+      <End Role="Restaurants" EntitySet="Restaurants" />
+      <End Role="Reserves" EntitySet="Reserves" />
     </AssociationSet>
   </EntityContainer>
 </Schema>
