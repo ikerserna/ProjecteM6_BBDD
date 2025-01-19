@@ -1,132 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\",
+  "WorkspaceRootPath": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\practica bbdd bader_iker\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmrestaurantsgestio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmrestaurantsgestio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmrestaurantsgestio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\practica bbdd bader_iker\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmrestaurantsgestio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmrestaurantsgestio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmdadesrestaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmdadesrestaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\practica bbdd bader_iker\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\practica bbdd bader_iker\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmciutats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmciutats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmciutats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmciutats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmadmpais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmpais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\practica bbdd bader_iker\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmadmciutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmciutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmadmciutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmciutat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmgestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmpaisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmpaisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmagestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmagestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmadmpais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmpais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmpaisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmpaisos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmgestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmagestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmagestiogaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmadmvaloracio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|d:\\dam2\\m6\\uf2\\projectem6_bbdd\\practica_bbdd_bader_iker\\practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AF2BE4BF-FCE8-475C-B496-C807CA16AAA8}|Practica BBDD Bader_Iker\\Practica BBDD Bader_Iker.csproj|solutionrelative:practica bbdd bader_iker\\formularis\\frmgaleria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> b41456f9ebe54b6889b89bd16b4966743ca6030c
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -136,355 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmADMValoracio.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAvwEIAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T21:00:41.664Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
               "Title": "FrmRestaurantsGestio.cs",
               "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs",
               "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs",
               "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs",
               "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAkwLcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:10:57.898Z",
+              "WhenOpened": "2025-01-19T21:57:26.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmDadesRestaurant.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmDadesRestaurant.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmDadesRestaurant.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmDadesRestaurant.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmDadesRestaurant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmRestaurantsGestio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs",
+              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs",
+              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmRestaurantsGestio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:11:26.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmCiutats.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAwHsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:11:26.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmADMCiutat.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:37.867Z",
+              "WhenOpened": "2025-01-19T21:57:25.238Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FrmADMCiutat.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMCiutat.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowGYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:11:25.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-=======
->>>>>>> b41456f9ebe54b6889b89bd16b4966743ca6030c
->>>>>>> Stashed changes
-              "Title": "FrmGaleria.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAA4wEgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T20:55:25.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 2,
-=======
-<<<<<<< HEAD
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "FrmADMValoracio.cs",
               "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
               "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
               "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
               "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAmwNEAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T12:53:43.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmADMPais.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wIYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:36:58.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmCategories.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:15.403Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "ViewState": "AgIAAB0AAAAAAAAAAAAvwEIAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-01-19T21:57:18.167Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmCategories.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCategories.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAIwGoAAABBAAAAAAAAAA==",
+              "Title": "FrmGaleria.cs",
+              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
+              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
+              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
+              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwEgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:18:26.359Z",
+              "WhenOpened": "2025-01-19T21:57:18.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\App.config",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\App.config",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\App.config",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-19T21:37:07.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\Model1.edmx",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\Model1.edmx",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-01-19T21:38:08.007Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmCiutats.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmCiutats.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:31.597Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FrmMain.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FrmMain.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FrmMain.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FrmMain.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FrmMain.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAkwLkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:10:55.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FrmMain.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FrmMain.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FrmMain.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FrmMain.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FrmMain.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:17:22.353Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FrmGestioGaleria.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:11:26.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FrmPaisos.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:11:26.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FrmAGestioGaleria.cs",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T19:11:07.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FrmADMPais.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMPais.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:38.46Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FrmPaisos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmPaisos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:36.877Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FrmGestioGaleria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGestioGaleria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:36.035Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-=======
-              "DocumentIndex": 2,
->>>>>>> b41456f9ebe54b6889b89bd16b4966743ca6030c
->>>>>>> Stashed changes
+              "DocumentIndex": 4,
               "Title": "FrmGaleria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
+              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
               "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs",
               "ToolTip": "D:\\DAM2\\M6\\UF2\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-01-19T20:55:23.191Z",
-=======
-<<<<<<< HEAD
-              "WhenOpened": "2025-01-19T16:15:34.905Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FrmAGestioGaleria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmAGestioGaleria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T16:15:40.311Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FrmADMValoracio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "RelativeDocumentMoniker": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs",
-              "ToolTip": "D:\\DAM2\\M6\\UF2\\Practica BBDD Bader_Iker\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Practica BBDD Bader_Iker\\FORMULARIS\\FrmADMValoracio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T12:52:57.218Z",
-=======
-              "WhenOpened": "2025-01-19T20:55:23.191Z",
->>>>>>> b41456f9ebe54b6889b89bd16b4966743ca6030c
->>>>>>> Stashed changes
-              "EditorCaption": " [Dise\u00F1o]"
+              "RelativeToolTip": "..\\..\\..\\ProjecteM6_BBDD\\Practica_BBDD_Bader_Iker\\Practica BBDD Bader_Iker\\FORMULARIS\\FrmGaleria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-01-19T21:57:18.26Z"
             }
           ]
         }
