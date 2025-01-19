@@ -75,13 +75,14 @@
             // galeriaToolStripMenuItem1
             // 
             this.galeriaToolStripMenuItem1.Name = "galeriaToolStripMenuItem1";
-            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.galeriaToolStripMenuItem1.Text = "Veure Galeria";
+            this.galeriaToolStripMenuItem1.Click += new System.EventHandler(this.galeriaToolStripMenuItem1_Click);
             // 
             // localsToolStripMenuItem
             // 
             this.localsToolStripMenuItem.Name = "localsToolStripMenuItem";
-            this.localsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.localsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.localsToolStripMenuItem.Text = "Locals";
             // 
             // llocsToolStripMenuItem
@@ -125,7 +126,7 @@
             this.restaurantsToolStripMenuItem1,
             this.categoriesToolStripMenuItem});
             this.dadesToolStripMenuItem.Name = "dadesToolStripMenuItem";
-            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dadesToolStripMenuItem.Text = "Dades Restaurants";
             this.dadesToolStripMenuItem.Click += new System.EventHandler(this.dadesToolStripMenuItem_Click);
             // 
@@ -145,26 +146,26 @@
             // galeriaToolStripMenuItem
             // 
             this.galeriaToolStripMenuItem.Name = "galeriaToolStripMenuItem";
-            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.galeriaToolStripMenuItem.Text = "Galeria";
             this.galeriaToolStripMenuItem.Click += new System.EventHandler(this.galeriaToolStripMenuItem_Click);
             // 
             // miniaturaWikiToolStripMenuItem
             // 
             this.miniaturaWikiToolStripMenuItem.Name = "miniaturaWikiToolStripMenuItem";
-            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.miniaturaWikiToolStripMenuItem.Text = "Miniatures Wiki";
             // 
             // googleMapsToolStripMenuItem
             // 
             this.googleMapsToolStripMenuItem.Name = "googleMapsToolStripMenuItem";
-            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.googleMapsToolStripMenuItem.Text = "Google Maps";
             // 
             // valoracioToolStripMenuItem
             // 
             this.valoracioToolStripMenuItem.Name = "valoracioToolStripMenuItem";
-            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.valoracioToolStripMenuItem.Text = "Valoracions";
             // 
             // tancarToolStripMenuItem

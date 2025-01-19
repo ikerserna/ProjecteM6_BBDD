@@ -88,7 +88,6 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
                 i.imatge = ConvertirImagenBase64(rutaImagen);
 
                 var qryFotos = from f in restaurantContext.GaleriaImatges
-                               where f.idRestaurant == idRestauranteSeleccionado
                                orderby f.idImatge descending
                                select f;
 

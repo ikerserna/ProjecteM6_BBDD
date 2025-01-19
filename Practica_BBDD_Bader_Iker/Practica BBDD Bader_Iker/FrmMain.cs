@@ -21,6 +21,7 @@ namespace Practica_BBDD_Bader_Iker
         FrmCiutats frmCiutats = null;
         FrmCategories frmCategories = null;
         FrmGestioGaleria frmGestioGaleria = null;
+        FrmGaleria frmGaleria = null;
 
         public FrmMain()
         {
@@ -158,6 +159,20 @@ namespace Practica_BBDD_Bader_Iker
         private void dadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void galeriaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            String xnom = "Galeria";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmGaleria = new FrmGaleria(restaurantContext);
+                frmGaleria.Name = xnom;
+                frmGaleria.MdiParent = this;
+                frmGaleria.Show();
+            }
+            frmGaleria.Activate();
         }
     }
 }

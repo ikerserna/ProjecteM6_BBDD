@@ -112,6 +112,12 @@
     <Compile Include="FORMULARIS\FrmCiutats.Designer.cs">
       <DependentUpon>FrmCiutats.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMULARIS\FrmGaleria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIS\FrmGaleria.Designer.cs">
+      <DependentUpon>FrmGaleria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMULARIS\FrmGestioGaleria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIS\FrmCiutats.resx">
       <DependentUpon>FrmCiutats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIS\FrmGaleria.resx">
+      <DependentUpon>FrmGaleria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIS\FrmGestioGaleria.resx">
       <DependentUpon>FrmGestioGaleria.cs</DependentUpon>
