@@ -14,7 +14,7 @@ namespace Practica_BBDD_Bader_Iker
     
     public partial class GaleriaImatges
     {
-        public string nomImatge { get; set; }
+        public string imatge { get; set; }
         public int idImatge { get; set; }
         public Nullable<int> idRestaurant { get; set; }
     

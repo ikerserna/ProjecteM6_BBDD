@@ -25,6 +25,7 @@ namespace Practica_BBDD_Bader_Iker
     
         public string Nom { get; set; }
         public int idRestaurant { get; set; }
+        public Nullable<int> estrellesMichellin { get; set; }
         public string NomCiutat { get; set; }
         public string Adresa { get; set; }
         public string CodiPostal { get; set; }

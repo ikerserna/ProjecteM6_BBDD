@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RestaurantsDBModel1StoreContainer" CdmEntityContainer="RestaurantsDBEntities10">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="descripcioCategoria" ColumnName="descripcioCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciutats">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Ciutats">
+        <MappingFragment StoreEntitySet="Ciutats">
+          <ScalarProperty Name="NomCiutat" ColumnName="NomCiutat" />
+          <ScalarProperty Name="NomPais" ColumnName="NomPais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Continents">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Continents">
+        <MappingFragment StoreEntitySet="Continents">
+          <ScalarProperty Name="NomContinent" ColumnName="NomContinent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GaleriaImatges">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.GaleriaImatges">
+        <MappingFragment StoreEntitySet="GaleriaImatges">
+          <ScalarProperty Name="imatge" ColumnName="imatge" />
+          <ScalarProperty Name="idImatge" ColumnName="idImatge" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Horaris">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Horaris">
+        <MappingFragment StoreEntitySet="Horaris">
+          <ScalarProperty Name="idHorari" ColumnName="idHorari" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
+          <ScalarProperty Name="diaSetmana" ColumnName="diaSetmana" />
+          <ScalarProperty Name="horaObertura" ColumnName="horaObertura" />
+          <ScalarProperty Name="horaTancament" ColumnName="horaTancament" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paisos">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Paisos">
+        <MappingFragment StoreEntitySet="Paisos">
+          <ScalarProperty Name="NomPais" ColumnName="NomPais" />
+          <ScalarProperty Name="NomContinent" ColumnName="NomContinent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resenyes">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Resenyes">
+        <MappingFragment StoreEntitySet="Resenyes">
+          <ScalarProperty Name="idResenya" ColumnName="idResenya" />
+          <ScalarProperty Name="resenya" ColumnName="resenya" />
+          <ScalarProperty Name="valoracio" ColumnName="valoracio" />
+          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reserves">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Reserves">
+        <MappingFragment StoreEntitySet="Reserves">
+          <ScalarProperty Name="IDReserva" ColumnName="IDReserva" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
+          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
+          <ScalarProperty Name="DataReserva" ColumnName="DataReserva" />
+          <ScalarProperty Name="HoraReserva" ColumnName="HoraReserva" />
+          <ScalarProperty Name="NumeroPersones" ColumnName="NumeroPersones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Restaurants">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Restaurants">
+        <MappingFragment StoreEntitySet="Restaurants">
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
+          <ScalarProperty Name="estrellesMichellin" ColumnName="estrellesMichellin" />
+          <ScalarProperty Name="NomCiutat" ColumnName="NomCiutat" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="CodiPostal" ColumnName="CodiPostal" />
+          <ScalarProperty Name="eMail" ColumnName="eMail" />
+          <ScalarProperty Name="TelefonContacte" ColumnName="TelefonContacte" />
+          <ScalarProperty Name="MiniaturaWeb" ColumnName="MiniaturaWeb" />
+          <ScalarProperty Name="LinkWeb" ColumnName="LinkWeb" />
+          <ScalarProperty Name="GoogleMapsLink" ColumnName="GoogleMapsLink" />
+          <ScalarProperty Name="CuinaEspecialitzada" ColumnName="CuinaEspecialitzada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuaris">
+      <EntityTypeMapping TypeName="RestaurantsDBModel1.Usuaris">
+        <MappingFragment StoreEntitySet="Usuaris">
+          <ScalarProperty Name="idUsuari" ColumnName="idUsuari" />
+          <ScalarProperty Name="NomUsuari" ColumnName="NomUsuari" />
+          <ScalarProperty Name="Correu" ColumnName="Correu" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Contrassenya" ColumnName="Contrassenya" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="RestaurantCategories" TypeName="RestaurantsDBModel1.RestaurantCategories" StoreEntitySet="RestaurantCategories">
+      <EndProperty Name="Categories">
+        <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+      </EndProperty>
+      <EndProperty Name="Restaurants">
+        <ScalarProperty Name="idRestaurant" ColumnName="idRestaurant" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -13,9 +13,9 @@ namespace Practica_BBDD_Bader_Iker
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class RestaurantsDBEntities : DbContext
+    public partial class RestaurantsDBEntities10 : DbContext
     {
-        public RestaurantsDBEntities()
+        public RestaurantsDBEntities10()
             : base("name=RestaurantsDBEntities10")
         {
         }

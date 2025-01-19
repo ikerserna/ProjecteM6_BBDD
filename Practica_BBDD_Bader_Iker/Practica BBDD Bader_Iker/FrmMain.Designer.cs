@@ -38,14 +38,14 @@
             this.paisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restaurantsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.galeriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miniaturaWikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.googleMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.valoracioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tancarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verificarConexióToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restaurantsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,13 +75,13 @@
             // galeriaToolStripMenuItem1
             // 
             this.galeriaToolStripMenuItem1.Name = "galeriaToolStripMenuItem1";
-            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.galeriaToolStripMenuItem1.Text = "Veure Galeria";
             // 
             // localsToolStripMenuItem
             // 
             this.localsToolStripMenuItem.Name = "localsToolStripMenuItem";
-            this.localsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.localsToolStripMenuItem.Text = "Locals";
             // 
             // llocsToolStripMenuItem
@@ -96,14 +96,14 @@
             // ciutatsToolStripMenuItem
             // 
             this.ciutatsToolStripMenuItem.Name = "ciutatsToolStripMenuItem";
-            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ciutatsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.ciutatsToolStripMenuItem.Text = "Ciutats";
             this.ciutatsToolStripMenuItem.Click += new System.EventHandler(this.ciutatsToolStripMenuItem_Click);
             // 
             // paisosToolStripMenuItem
             // 
             this.paisosToolStripMenuItem.Name = "paisosToolStripMenuItem";
-            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paisosToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.paisosToolStripMenuItem.Text = "Paisos";
             this.paisosToolStripMenuItem.Click += new System.EventHandler(this.paisosToolStripMenuItem_Click);
             // 
@@ -125,59 +125,61 @@
             this.restaurantsToolStripMenuItem1,
             this.categoriesToolStripMenuItem});
             this.dadesToolStripMenuItem.Name = "dadesToolStripMenuItem";
-            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dadesToolStripMenuItem.Text = "Dades Restarants";
+            this.dadesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.dadesToolStripMenuItem.Text = "Dades Restaurants";
+            this.dadesToolStripMenuItem.Click += new System.EventHandler(this.dadesToolStripMenuItem_Click);
+            // 
+            // restaurantsToolStripMenuItem1
+            // 
+            this.restaurantsToolStripMenuItem1.Name = "restaurantsToolStripMenuItem1";
+            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
+            this.restaurantsToolStripMenuItem1.Text = "Restaurants";
+            // 
+            // categoriesToolStripMenuItem
+            // 
+            this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.categoriesToolStripMenuItem.Text = "Categories";
+            this.categoriesToolStripMenuItem.Click += new System.EventHandler(this.categoriesToolStripMenuItem_Click);
             // 
             // galeriaToolStripMenuItem
             // 
             this.galeriaToolStripMenuItem.Name = "galeriaToolStripMenuItem";
-            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.galeriaToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.galeriaToolStripMenuItem.Text = "Galeria";
+            this.galeriaToolStripMenuItem.Click += new System.EventHandler(this.galeriaToolStripMenuItem_Click);
             // 
             // miniaturaWikiToolStripMenuItem
             // 
             this.miniaturaWikiToolStripMenuItem.Name = "miniaturaWikiToolStripMenuItem";
-            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.miniaturaWikiToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.miniaturaWikiToolStripMenuItem.Text = "Miniatures Wiki";
             // 
             // googleMapsToolStripMenuItem
             // 
             this.googleMapsToolStripMenuItem.Name = "googleMapsToolStripMenuItem";
-            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.googleMapsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.googleMapsToolStripMenuItem.Text = "Google Maps";
             // 
             // valoracioToolStripMenuItem
             // 
             this.valoracioToolStripMenuItem.Name = "valoracioToolStripMenuItem";
-            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.valoracioToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.valoracioToolStripMenuItem.Text = "Valoracions";
             // 
             // tancarToolStripMenuItem
             // 
             this.tancarToolStripMenuItem.Name = "tancarToolStripMenuItem";
-            this.tancarToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.tancarToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.tancarToolStripMenuItem.Text = "Tancar";
             this.tancarToolStripMenuItem.Click += new System.EventHandler(this.tancarToolStripMenuItem_Click);
             // 
             // verificarConexióToolStripMenuItem
             // 
             this.verificarConexióToolStripMenuItem.Name = "verificarConexióToolStripMenuItem";
-            this.verificarConexióToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.verificarConexióToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.verificarConexióToolStripMenuItem.Text = "Verificar Conexió";
             this.verificarConexióToolStripMenuItem.Click += new System.EventHandler(this.verificarConexióToolStripMenuItem_Click);
-            // 
-            // restaurantsToolStripMenuItem1
-            // 
-            this.restaurantsToolStripMenuItem1.Name = "restaurantsToolStripMenuItem1";
-            this.restaurantsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.restaurantsToolStripMenuItem1.Text = "Restaurants";
-            // 
-            // categoriesToolStripMenuItem
-            // 
-            this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
-            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.categoriesToolStripMenuItem.Text = "Categories";
-            this.categoriesToolStripMenuItem.Click += new System.EventHandler(this.categoriesToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -185,11 +187,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 727);
             this.Controls.Add(this.msMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.msMain;
             this.Name = "FrmMain";
             this.Text = "Restaurants";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.msMain.ResumeLayout(false);

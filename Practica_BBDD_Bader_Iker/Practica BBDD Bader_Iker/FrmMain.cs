@@ -14,12 +14,13 @@ namespace Practica_BBDD_Bader_Iker
     public partial class FrmMain : Form
     {
 
-        private RestaurantsDBEntities restaurantContext { get; set; } = new RestaurantsDBEntities();
+        private RestaurantsDBEntities10 restaurantContext { get; set; } = new RestaurantsDBEntities10();
         
 
         FrmPaisos frmPaisos = null;
         FrmCiutats frmCiutats = null;
         FrmCategories frmCategories = null;
+        FrmGestioGaleria frmGestioGaleria = null;
 
         public FrmMain()
         {
@@ -140,6 +141,23 @@ namespace Practica_BBDD_Bader_Iker
             }
         }
 
-        
+        private void galeriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String xnom = "Gestió Galeria";
+
+            if (!(ja_esta_obert(xnom)))
+            {
+                frmGestioGaleria = new FrmGestioGaleria(restaurantContext);
+                frmGestioGaleria.Name = xnom;
+                frmGestioGaleria.MdiParent = this;
+                frmGestioGaleria.Show();
+            }
+            frmGestioGaleria.Activate();
+        }
+
+        private void dadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
