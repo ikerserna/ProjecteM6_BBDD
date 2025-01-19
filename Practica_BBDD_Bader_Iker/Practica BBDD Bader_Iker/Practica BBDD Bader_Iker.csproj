@@ -194,11 +194,11 @@
     <Compile Include="FORMULARIS\FrmPaisos.Designer.cs">
       <DependentUpon>FrmPaisos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORMULARIS\FrmValoracio.cs">
+    <Compile Include="FORMULARIS\FrmADMValoracio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORMULARIS\FrmValoracio.Designer.cs">
-      <DependentUpon>FrmValoracio.cs</DependentUpon>
+    <Compile Include="FORMULARIS\FrmADMValoracio.Designer.cs">
+      <DependentUpon>FrmADMValoracio.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -276,8 +276,8 @@
     <EmbeddedResource Include="FORMULARIS\FrmPaisos.resx">
       <DependentUpon>FrmPaisos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORMULARIS\FrmValoracio.resx">
-      <DependentUpon>FrmValoracio.cs</DependentUpon>
+    <EmbeddedResource Include="FORMULARIS\FrmADMValoracio.resx">
+      <DependentUpon>FrmADMValoracio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>

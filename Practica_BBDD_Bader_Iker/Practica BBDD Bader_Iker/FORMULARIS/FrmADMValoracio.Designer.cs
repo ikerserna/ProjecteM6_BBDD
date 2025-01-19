@@ -1,6 +1,6 @@
 ﻿namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
-    partial class FrmValoracio
+    partial class FrmADMValoracio
     {
         /// <summary>
         /// Required designer variable.

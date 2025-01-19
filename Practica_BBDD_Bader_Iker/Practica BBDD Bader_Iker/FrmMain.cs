@@ -23,7 +23,7 @@ namespace Practica_BBDD_Bader_Iker
         FrmGestioGaleria frmGestioGaleria = null;
         FrmGaleria frmGaleria = null;
         FrmDadesRestaurant frmDadesRestaurant = null;
-        FrmValoracio frmValoracio = null;
+        FrmADMValoracio frmValoracio = null;
 
         public FrmMain()
         {
@@ -194,11 +194,11 @@ namespace Practica_BBDD_Bader_Iker
         private void valoracioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             String xnom = "Valoracions";
-            Boolean modificar = false;
+            Char accio = 'A';
 
             if (!(ja_esta_obert(xnom)))
             {
-                frmValoracio = new FrmValoracio(restaurantContext, modificar);
+                frmValoracio = new FrmADMValoracio(restaurantContext, accio);
                 frmValoracio.Name = xnom;
                 frmValoracio.MdiParent = this;
                 frmValoracio.Show();

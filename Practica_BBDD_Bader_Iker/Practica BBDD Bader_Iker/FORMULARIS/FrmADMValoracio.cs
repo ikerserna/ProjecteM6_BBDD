@@ -11,27 +11,42 @@ using System.Windows.Forms;
 
 namespace Practica_BBDD_Bader_Iker.FORMULARIS
 {
-    public partial class FrmValoracio : Form
+    public partial class FrmADMValoracio : Form
     {
         private RestaurantsDBEntitiesIker restaurantContext;
         private Resenyes resenyaActual;
         int valoracioActual;
-        Boolean modificar;
+        Char accio;
 
-        public FrmValoracio(RestaurantsDBEntitiesIker restaurantContext, bool modificar, Resenyes resenya = null)
+        public FrmADMValoracio(RestaurantsDBEntitiesIker restaurantContext, char accio, Resenyes resenya = null)
         {
             InitializeComponent();
             this.restaurantContext = restaurantContext;
-            this.modificar = modificar;
-            this.resenyaActual = resenyaActual;
+            this.accio = accio;
+            this.resenyaActual = resenya;
         }
 
         private void FrmValoracio_Load(object sender, EventArgs e)
         {
             omplirComboRestaurants();
-            if (modificar)
+            switch (accio)
             {
-                omplirDadesFormulari();
+
+                case 'A':
+                    this.Name = "Afegir Pais";
+                    cbRestaurants.SelectedIndex = 0;
+                    break;
+                case 'D':
+                    this.Name = "Eliminar Pais";
+                    cbRestaurants.SelectedValue = resenyaActual.idRestaurant;
+                    omplirDadesFormulari();
+                    break;
+                case 'M':
+                    this.Name = "Modificar Pais";
+                    omplirDadesFormulari();
+                    break;
+                default:
+                    break;
             }
         }
 
@@ -41,8 +56,7 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
             {
                 tbUsuari.Text = resenyaActual.nomUsuari;
                 tbResenya.Text = resenyaActual.descripcio;
-                valoracioActual = resenyaActual.valoracio;
-
+                valoracioActual = resenyaActual.valoracio.GetValueOrDefault();
                 cbRestaurants.SelectedValue = resenyaActual.idRestaurant;
 
                 for (int i = 1; i <= 5; i++)
@@ -99,15 +113,44 @@ namespace Practica_BBDD_Bader_Iker.FORMULARIS
         {
             Boolean xb = false;
 
-            if (vDades())
+            switch (accio)
             {
-                xb = addResenya();
+                case 'A': xb = addResenya(); break;
+                case 'B': xb = delResenya(); break;
+                case 'M': xb = modResenya(); break;
             }
-
             if (xb)
             {
                 this.Close();
             }
+        }
+
+        private bool modResenya()
+        {
+            Boolean xb = false;
+            Resenyes r = restaurantContext.Resenyes.Find(resenyaActual.idResenya);
+
+            if (r != null)
+            {
+                r.nomUsuari = tbUsuari.Text;
+                r.descripcio = tbResenya.Text;
+                r.valoracio = valoracioActual;
+                xb = ferCanvis();
+            }
+            return xb;
+        }
+
+        private bool delResenya()
+        {
+            Boolean xb = false;
+            Resenyes r = restaurantContext.Resenyes.Find(resenyaActual.idResenya);
+
+            if (r != null)
+            {
+                restaurantContext.Resenyes.Remove(r);
+                xb = ferCanvis();
+            }
+            return xb;
         }
 
         private bool addResenya()
